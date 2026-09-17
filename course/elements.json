@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "sourceRefs": [
+    "F1",
+    "N1"
+  ],
+  "modelNote": "Only elements 1–20. EN values use the rounded course table on F1 slide 7. Missing noble-gas values are null, never zero.",
+  "elements": [
+    {
+      "symbol": "H",
+      "name": "hydrogen",
+      "atomicNumber": 1,
+      "group": 1,
+      "period": 1,
+      "neutralShells": [
+        1
+      ],
+      "category": "ikke-metall",
+      "classroomElectronegativity": 2.1
+    },
+    {
+      "symbol": "He",
+      "name": "helium",
+      "atomicNumber": 2,
+      "group": 18,
+      "period": 1,
+      "neutralShells": [
+        2
+      ],
+      "category": "edelgass",
+      "classroomElectronegativity": null
+    },
+    {
+      "symbol": "Li",
+      "name": "litium",
+      "atomicNumber": 3,
+      "group": 1,
+      "period": 2,
+      "neutralShells": [
+        2,
+        1
+      ],
+      "category": "metall",
+      "classroomElectronegativity": 1.0
+    },
+    {
+      "symbol": "Be",
+      "name": "beryllium",
+      "atomicNumber": 4,
+      "group": 2,
+      "period": 2,
+      "neutralShells": [
+        2,
+        2
+      ],
+      "category": "metall",
+      "classroomElectronegativity": 1.5
+    },
+    {
+      "symbol": "B",
+      "name": "bor",
+      "atomicNumber": 5,
+      "group": 13,
+      "period": 2,
+      "neutralShells": [
+        2,
+        3
+      ],
+      "category": "halvmetall",
+      "classroomElectronegativity": 2.0
+    },
+    {
+      "symbol": "C",
+      "name": "karbon",
+      "atomicNumber": 6,
+      "group": 14,
+      "period": 2,
+      "neutralShells": [
+        2,
+        4
+      ],
+      "category": "ikke-metall",
+      "classroomElectronegativity": 2.5
+    },
+    {
+      "symbol": "N",
+      "name": "nitrogen",
+      "atomicNumber": 7,
+      "group": 15,
+      "period": 2,
+      "neutralShells": [
+        2,
+        5
+      ],
+      "category": "ikke-metall",
+      "classroomElectronegativity": 3.0
+    },
+    {
+      "symbol": "O",
+      "name": "oksygen",
+      "atomicNumber": 8,
+      "group": 16,
+      "period": 2,
+      "neutralShells": [
+        2,
+        6
+      ],
+      "category": "ikke-metall",
+      "classroomElectronegativity": 3.5
+    },
+    {
+      "symbol": "F",
+      "name": "fluor",
+      "atomicNumber": 9,
+      "group": 17,
+      "period": 2,
+      "neutralShells": [
+        2,
+        7
+      ],
+      "category": "ikke-metall",
+      "classroomElectronegativity": 4.0
+    },
+    {
+      "symbol": "Ne",
+      "name": "neon",
+      "atomicNumber": 10,
+      "group": 18,
+      "period": 2,
+      "neutralShells": [
+        2,
+        8
+      ],
+      "category": "edelgass",
+      "classroomElectronegativity": null
+    },
+    {
+      "symbol": "Na",
+      "name": "natrium",
+      "atomicNumber": 11,
+      "group": 1,
+      "period": 3,
+      "neutralShells": [
+        2,
+        8,
+        1
+      ],
+      "category": "metall",
+      "classroomElectronegativity": 0.9
+    },
+    {
+      "symbol": "Mg",
+      "name": "magnesium",
+      "atomicNumber": 12,
+      "group": 2,
+      "period": 3,
+      "neutralShells": [
+        2,
+        8,
+        2
+      ],
+      "category": "metall",
+      "classroomElectronegativity": 1.2
+    },
+    {
+      "symbol": "Al",
+      "name": "aluminium",
+      "atomicNumber": 13,
+      "group": 13,
+      "period": 3,
+      "neutralShells": [
+        2,
+        8,
+        3
+      ],
+      "category": "metall",
+      "classroomElectronegativity": 1.5
+    },
+    {
+      "symbol": "Si",
+      "name": "silisium",
+      "atomicNumber": 14,
+      "group": 14,
+      "period": 3,
+      "neutralShells": [
+        2,
+        8,
+        4
+      ],
+      "category": "halvmetall",
+      "classroomElectronegativity": 1.8
+    },
+    {
+      "symbol": "P",
+      "name": "fosfor",
+      "atomicNumber": 15,
+      "group": 15,
+      "period": 3,
+      "neutralShells": [
+        2,
+        8,
+        5
+      ],
+      "category": "ikke-metall",
+      "classroomElectronegativity": 2.1
+    },
+    {
+      "symbol": "S",
+      "name": "svovel",
+      "atomicNumber": 16,
+      "group": 16,
+      "period": 3,
+      "neutralShells": [
+        2,
+        8,
+        6
+      ],
+      "category": "ikke-metall",
+      "classroomElectronegativity": 2.5
+    },
+    {
+      "symbol": "Cl",
+      "name": "klor",
+      "atomicNumber": 17,
+      "group": 17,
+      "period": 3,
+      "neutralShells": [
+        2,
+        8,
+        7
+      ],
+      "category": "ikke-metall",
+      "classroomElectronegativity": 3.0
+    },
+    {
+      "symbol": "Ar",
+      "name": "argon",
+      "atomicNumber": 18,
+      "group": 18,
+      "period": 3,
+      "neutralShells": [
+        2,
+        8,
+        8
+      ],
+      "category": "edelgass",
+      "classroomElectronegativity": null
+    },
+    {
+      "symbol": "K",
+      "name": "kalium",
+      "atomicNumber": 19,
+      "group": 1,
+      "period": 4,
+      "neutralShells": [
+        2,
+        8,
+        8,
+        1
+      ],
+      "category": "metall",
+      "classroomElectronegativity": 0.8
+    },
+    {
+      "symbol": "Ca",
+      "name": "kalsium",
+      "atomicNumber": 20,
+      "group": 2,
+      "period": 4,
+      "neutralShells": [
+        2,
+        8,
+        8,
+        2
+      ],
+      "category": "metall",
+      "classroomElectronegativity": 1.0
+    }
+  ]
+}

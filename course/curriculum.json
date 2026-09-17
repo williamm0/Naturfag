@@ -1,0 +1,730 @@
+{
+  "schemaVersion": 1,
+  "language": "nb",
+  "title": "Kjemilab",
+  "scope": "Naturfag Vg1, avgrenset til opplastet undervisningsmateriale med merkede presiseringer.",
+  "modules": [
+    {
+      "id": "m01",
+      "title": "Atomer og skall",
+      "goal": "Finn ut hva et atom består av, og hold styr på elektronene.",
+      "skillIds": [
+        "atom.parts",
+        "atom.identity",
+        "atom.shells"
+      ],
+      "prerequisiteModuleIds": []
+    },
+    {
+      "id": "m02",
+      "title": "Periodesystemet",
+      "goal": "Les systemet i stedet for å pugge hele tabellen.",
+      "skillIds": [
+        "period.position",
+        "period.valence",
+        "period.trends"
+      ],
+      "prerequisiteModuleIds": [
+        "m01"
+      ]
+    },
+    {
+      "id": "m03",
+      "title": "Ioner og ionebinding",
+      "goal": "Følg elektronene, finn ladningen og bygg et nøytralt salt.",
+      "skillIds": [
+        "ion.formation",
+        "ion.formula",
+        "ion.properties"
+      ],
+      "prerequisiteModuleIds": [
+        "m02"
+      ]
+    },
+    {
+      "id": "m04",
+      "title": "Elektronparbinding og metallbinding",
+      "goal": "Se forskjellen på delte elektronpar og bevegelige elektroner i metall.",
+      "skillIds": [
+        "bond.covalent",
+        "bond.electronegativity",
+        "bond.metallic"
+      ],
+      "prerequisiteModuleIds": [
+        "m02"
+      ]
+    },
+    {
+      "id": "m05",
+      "title": "Polare molekyler",
+      "goal": "Bruk både bindingene og formen når du vurderer polaritet.",
+      "skillIds": [
+        "polarity.bond",
+        "polarity.shape",
+        "polarity.classify"
+      ],
+      "prerequisiteModuleIds": [
+        "m04"
+      ]
+    },
+    {
+      "id": "m06",
+      "title": "Krefter mellom molekyler",
+      "goal": "Skill bindinger inni molekyler fra kreftene mellom dem.",
+      "skillIds": [
+        "forces.types",
+        "forces.hydrogen",
+        "forces.boiling"
+      ],
+      "prerequisiteModuleIds": [
+        "m05"
+      ]
+    },
+    {
+      "id": "m07",
+      "title": "Hydrokarboner",
+      "goal": "Bygg karbonkjeder og oppdag hva bindingene forteller.",
+      "skillIds": [
+        "carbon.valence",
+        "carbon.families",
+        "carbon.isomers"
+      ],
+      "prerequisiteModuleIds": [
+        "m04"
+      ]
+    },
+    {
+      "id": "m08",
+      "title": "Alkoholer og karboksylsyrer",
+      "goal": "Finn gruppene som endrer egenskapene til karbonforbindelser.",
+      "skillIds": [
+        "alcohol.groups",
+        "alcohol.properties",
+        "acid.structures"
+      ],
+      "prerequisiteModuleIds": [
+        "m06",
+        "m07"
+      ]
+    },
+    {
+      "id": "m09",
+      "title": "Fettsyrer og fett",
+      "goal": "Koble kjedenes struktur til hvordan fettstoffer oppfører seg.",
+      "skillIds": [
+        "fat.structure",
+        "fat.saturation",
+        "fat.packing"
+      ],
+      "prerequisiteModuleIds": [
+        "m08"
+      ]
+    },
+    {
+      "id": "m10",
+      "title": "Forklar hverdagen",
+      "goal": "Bruk flere begreper sammen om vann, olje, såpe og temperatur.",
+      "skillIds": [
+        "apply.solubility",
+        "apply.soap",
+        "apply.explain"
+      ],
+      "prerequisiteModuleIds": [
+        "m03",
+        "m06",
+        "m09"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "atom.parts",
+      "moduleId": "m01",
+      "title": "Partiklene i atomet",
+      "objective": "Plasser protoner, nøytroner og elektroner og oppgi ladningene deres.",
+      "lesson": "Protoner og nøytroner ligger i atomkjernen. Protoner er positive, mens nøytroner ikke har elektrisk ladning. Elektroner er negative og finnes rundt kjernen. Vi tegner elektroner i skall for å holde oversikt. Dette er en forenklet modell, ikke et fotografi eller en nøyaktig beskrivelse av elektronbaner.",
+      "defaultHints": [
+        "Begynn med å skille mellom kjernen og området rundt.",
+        "Hvilken av de tre partiklene har ingen ladning?"
+      ],
+      "sourceRefs": [
+        "F1",
+        "F2",
+        "O1"
+      ],
+      "origin": "course",
+      "clarificationIds": []
+    },
+    {
+      "id": "atom.identity",
+      "moduleId": "m01",
+      "title": "Grunnstoff og ladning",
+      "objective": "Bruk antall protoner til å identifisere et grunnstoff og sammenlign protoner og elektroner.",
+      "lesson": "Antall protoner bestemmer grunnstoffet. Et nøytralt atom har like mange protoner og elektroner. Endrer vi antall elektroner, kan ladningen endres uten at grunnstoffet endres. Tell positive og negative ladninger hver for seg før du bestemmer nettoladningen. Nøytroner bidrar ikke til elektrisk ladning.",
+      "defaultHints": [
+        "Hva forteller atomnummeret?",
+        "Er det flest positive ladninger, flest negative eller like mange?"
+      ],
+      "sourceRefs": [
+        "F1",
+        "O1"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C03"
+      ]
+    },
+    {
+      "id": "atom.shells",
+      "moduleId": "m01",
+      "title": "Elektronskall",
+      "objective": "Fordel elektroner og forklar ytterelektroner med den avgrensede skallmodellen.",
+      "lesson": "I denne øvingen bruker vi de 20 første grunnstoffene. Vi fyller det første skallet med opptil to elektroner og bruker fordelingen 2, 8, 8, 2 når vi kommer til kalsium. Antallet i ytterste fylte skall er antall ytterelektroner. Åtteregelen er en nyttig huskeregel for mange av eksemplene våre. Hydrogen og helium bruker et første skall som er fullt med to. Modellen gjelder ikke som en universell fylleregel for alle grunnstoffer.",
+      "defaultHints": [
+        "Tell alle elektronene før du fordeler dem.",
+        "Se på det ytterste skallet som faktisk inneholder elektroner."
+      ],
+      "sourceRefs": [
+        "F1",
+        "N1",
+        "O1"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C03",
+        "C14"
+      ]
+    },
+    {
+      "id": "period.position",
+      "moduleId": "m02",
+      "title": "Grupper og perioder",
+      "objective": "Skille loddrette grupper fra vannrette perioder.",
+      "lesson": "En gruppe er en loddrett kolonne. En periode er en vannrett rad. For grunnstoffene vi arbeider med, forteller perioden hvor mange elektronskall det nøytrale atomet har. Når du går nedover i en gruppe, får atomene flere skall. Periodesystemet er ordnet etter økende atomnummer, altså protonantall.",
+      "defaultHints": [
+        "Følg en rad fra venstre mot høyre.",
+        "Sammenlign litium og natrium i samme kolonne."
+      ],
+      "sourceRefs": [
+        "F1",
+        "N1",
+        "O2"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C01",
+        "C15"
+      ]
+    },
+    {
+      "id": "period.valence",
+      "moduleId": "m02",
+      "title": "Ytterelektroner og hovedgrupper",
+      "objective": "Les av ytterelektroner for hovedgruppene og kjenn unntaket helium.",
+      "lesson": "I hovedgruppe 1 og 2 har de nøytrale atomene vanligvis ett og to ytterelektroner. For gruppe 13 til 18 bruker vi vanligvis siste siffer. Helium er unntaket: det står i gruppe 18, men har to elektroner og et fullt første skall. Ikke bruk denne regelen ukritisk på gruppe 3 til 12. Hydrogen står i gruppe 1, men er ikke et alkalimetall.",
+      "defaultHints": [
+        "Sjekk om du er i en hovedgruppe.",
+        "Er dette helium, eller kan du bruke grupperegelen?"
+      ],
+      "sourceRefs": [
+        "F1",
+        "N1"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C04"
+      ]
+    },
+    {
+      "id": "period.trends",
+      "moduleId": "m02",
+      "title": "Størrelse og elektronegativitet",
+      "objective": "Forutsi enkle trender innen samme gruppe eller periode.",
+      "lesson": "Atomstørrelsen øker vanligvis nedover i en gruppe og minker mot høyre i en periode. Elektronegativitet beskriver hvor sterkt et atom trekker på elektroner i en binding. Den øker vanligvis oppover og mot høyre, når vi ser bort fra edelgassene i denne modellen. Sammenlign helst grunnstoffer i samme rad eller kolonne. Retningsreglene gir ikke presise størrelsesforhold.",
+      "defaultHints": [
+        "Er det antall skall eller trekkraften på bindingselektroner du skal sammenligne?",
+        "Finn først ut om grunnstoffene ligger i samme gruppe eller periode."
+      ],
+      "sourceRefs": [
+        "F1",
+        "O2",
+        "O3"
+      ],
+      "origin": "course",
+      "clarificationIds": []
+    },
+    {
+      "id": "ion.formation",
+      "moduleId": "m03",
+      "title": "Fra atom til ion",
+      "objective": "Finn ladning ved å følge elektroner uten å endre protonantallet.",
+      "lesson": "Et atom blir et ion når antallet elektroner ikke lenger er likt protonantallet. Når et atom mister elektroner, får det positiv ladning. Tar det opp elektroner, får det negativ ladning. I kursets enkle eksempler danner gruppe 1 ofte ioner med én positiv ladning, gruppe 2 to positive, gruppe 16 to negative og gruppe 17 én negativ. Dette er vanlige mønstre, ikke regler for alle forbindelser.",
+      "defaultHints": [
+        "Skriv først hvor mange protoner atomet har.",
+        "Hva skjer med antallet negative ladninger når et elektron fjernes?"
+      ],
+      "sourceRefs": [
+        "F1",
+        "F2",
+        "N3"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C04",
+        "C02"
+      ]
+    },
+    {
+      "id": "ion.formula",
+      "moduleId": "m03",
+      "title": "Nøytrale salter",
+      "objective": "Velg minste heltallsforhold mellom ioner som gir samlet ladning null.",
+      "lesson": "Ionebinding er tiltrekning mellom ioner med motsatt ladning. I et salt må den samlede positive og negative ladningen balansere. Formelen viser det enkleste heltallsforholdet mellom ionene, ikke et lite, frittstående saltmolekyl. Tenk på ionenes ladning før du bestemmer antallet av hver type.",
+      "defaultHints": [
+        "Legg sammen ladningene til ionene du har valgt.",
+        "Trenger du flere av ionet med den minste ladningen for å få balanse?"
+      ],
+      "sourceRefs": [
+        "F2",
+        "N3"
+      ],
+      "origin": "course",
+      "clarificationIds": []
+    },
+    {
+      "id": "ion.properties",
+      "moduleId": "m03",
+      "title": "Saltgitter og strøm",
+      "objective": "Koble saltets form og ledningsevne til bevegeligheten til ionene.",
+      "lesson": "I et fast salt sitter ionene i et gitter. Da kan de ikke bevege seg fritt gjennom stoffet og frakte ladning. Når et salt smelter, eller et løselig salt blir løst i vann, kan ionene bevege seg. Salter er ofte sprø og har høye smeltepunkter. Ikke alle salter løses lett i vann.",
+      "defaultHints": [
+        "Hva må kunne bevege seg for å frakte elektrisk ladning?",
+        "Er ionene låst i et fast gitter eller frie til å bevege seg?"
+      ],
+      "sourceRefs": [
+        "F2",
+        "N3"
+      ],
+      "origin": "course",
+      "clarificationIds": []
+    },
+    {
+      "id": "bond.covalent",
+      "moduleId": "m04",
+      "title": "Delte elektronpar",
+      "objective": "Tolk enkelt-, dobbelt- og trippelbindinger som delte elektronpar.",
+      "lesson": "Ved elektronparbinding deler atomene elektroner. Kovalent binding er et annet navn på det samme. Én strek i en strukturformel viser ett delt elektronpar. En dobbeltbinding viser to delte par, og en trippelbinding tre. I eksemplene våre binder ikke-metaller seg sammen på denne måten. Å dele elektroner er ikke det samme som å overføre dem fullstendig.",
+      "defaultHints": [
+        "Hvor mange streker ser du mellom atomene?",
+        "Hvert elektronpar inneholder to elektroner."
+      ],
+      "sourceRefs": [
+        "F2",
+        "N2"
+      ],
+      "origin": "course",
+      "clarificationIds": []
+    },
+    {
+      "id": "bond.electronegativity",
+      "moduleId": "m04",
+      "title": "Ulik trekkraft",
+      "objective": "Bruk oppgitte elektronegativiteter og kursets omtrentlige grenser.",
+      "lesson": "Sammenlign hvor sterkt de to atomene trekker på de delte elektronene. I kursets tabell klassifiserer vi forskjeller under 0,5 som upolar elektronparbinding, fra 0,5 til og med 1,7 som polar elektronparbinding og over 1,7 som en indikasjon på ionebinding. Dette er en forenklet huskeregel med unntak. Oppgavene oppgir verdiene du skal bruke, slik at ulike avrundinger ikke gir ulike svar.",
+      "defaultHints": [
+        "Ta den største oppgitte verdien og trekk fra den minste.",
+        "Sammenlign forskjellen med grensene som vises i oppgaven."
+      ],
+      "sourceRefs": [
+        "F1",
+        "F2",
+        "N2",
+        "O3"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C05",
+        "C06"
+      ]
+    },
+    {
+      "id": "bond.metallic",
+      "moduleId": "m04",
+      "title": "Elektroner i metaller",
+      "objective": "Forklar strømledning og formbarhet med metallmodellen.",
+      "lesson": "I metallmodellen holdes positive metallioner sammen av en felles mengde delokaliserte elektroner. Elektronene kan bevege seg gjennom metallet og frakte ladning. Det bidrar til at metaller leder strøm og varme. Lagene kan forskyves uten at tiltrekningen forsvinner på samme måte som i et sprøtt saltgitter. Ionene vibrerer rundt plassene sine i fast metall; de er ikke fullstendig bevegelsesløse.",
+      "defaultHints": [
+        "Hvilke partikler kan bevege seg gjennom det faste metallet?",
+        "Tenk på hva som fortsatt holder metallionene sammen når et lag flyttes."
+      ],
+      "sourceRefs": [
+        "F2",
+        "N4"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C07"
+      ]
+    },
+    {
+      "id": "polarity.bond",
+      "moduleId": "m05",
+      "title": "Delvise ladninger",
+      "objective": "Plasser delvis positiv og delvis negativ ladning i en polar binding.",
+      "lesson": "I en polar elektronparbinding er elektronene skjevt fordelt. Atomet som trekker sterkest på dem, får en delvis negativ side, skrevet δ−. Den andre siden blir delvis positiv, δ+. Dette er ikke hele ioneladninger. Et nøytralt polart molekyl har fortsatt like mye positiv og negativ ladning totalt.",
+      "defaultHints": [
+        "Hvilket atom trekker sterkest på elektronene?",
+        "Elektroner har negativ ladning. Hva betyr det for siden de trekkes mot?"
+      ],
+      "sourceRefs": [
+        "F1",
+        "F2",
+        "N2",
+        "O3"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C12"
+      ]
+    },
+    {
+      "id": "polarity.shape",
+      "moduleId": "m05",
+      "title": "Formen teller",
+      "objective": "Forklar at polare bindinger kan oppheve hverandres virkning i et symmetrisk molekyl.",
+      "lesson": "Du må se på både bindingene og formen før du avgjør om et molekyl er polart. Vann er bøyd. Karbondioksid er rettlinjet, med oksygen på hver side av karbon. Like sterke bindingsdipoler som peker i motsatt retning kan oppheve hverandres virkning. Strukturtegningen i oppgaven viser den relevante formen; du trenger ikke beregne vinkler.",
+      "defaultHints": [
+        "Se på retningene bindingene peker i.",
+        "Trekker de to like endene i motsatte retninger, eller gir formen en skjev fordeling?"
+      ],
+      "sourceRefs": [
+        "F1",
+        "N8",
+        "O5"
+      ],
+      "origin": "clarification",
+      "clarificationIds": [
+        "C12"
+      ]
+    },
+    {
+      "id": "polarity.classify",
+      "moduleId": "m05",
+      "title": "Vurder hele molekylet",
+      "objective": "Klassifiser et lite utvalg molekyler og begrunn med binding og form.",
+      "lesson": "Vi øver med H₂O, CO₂, CH₄, HCl, NH₃ og like toatomige molekyler. Formen oppgis alltid når du trenger den. En polar binding er ikke alene nok til å gjøre hele molekylet polart. Like atomtyper i et toatomig molekyl deler elektronene likt. Ikke avgjør polaritet bare ved å telle ulike grunnstoffer.",
+      "defaultHints": [
+        "Vurder først om bindingene har skjev elektronfordeling.",
+        "Undersøk deretter om formen opphever eller bevarer skjevheten."
+      ],
+      "sourceRefs": [
+        "F2",
+        "N2",
+        "N8",
+        "O5"
+      ],
+      "origin": "clarification",
+      "clarificationIds": [
+        "C06",
+        "C12"
+      ]
+    },
+    {
+      "id": "forces.types",
+      "moduleId": "m06",
+      "title": "Inni eller mellom",
+      "objective": "Skill elektronparbinding fra dispersjonskrefter og andre krefter mellom molekyler.",
+      "lesson": "Elektronparbinding holder atomene sammen inni molekyler. Mellom molekyler finnes svakere tiltrekningskrefter. Dispersjonskrefter skyldes midlertidige skjevheter i elektronfordelingen og finnes også mellom upolare molekyler. Polare molekyler har i tillegg tiltrekning mellom permanente dipoler. I undervisningsmaterialet brukes van der Waals-krefter som et overordnet eller forenklet begrep; appen presiserer hvilken kraft det er snakk om.",
+      "defaultHints": [
+        "Peker markeringen på en forbindelse inni ett molekyl eller mellom to?",
+        "Upolar betyr ikke at alle tiltrekningskrefter er borte."
+      ],
+      "sourceRefs": [
+        "F2",
+        "F3",
+        "N7",
+        "O4"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C13"
+      ]
+    },
+    {
+      "id": "forces.hydrogen",
+      "moduleId": "m06",
+      "title": "Hydrogenbinding",
+      "objective": "Gjenkjenn hydrogenbinding i kursets molekyleksempler.",
+      "lesson": "For eksemplene våre må hydrogen være bundet direkte til O, N eller F for å kunne gi hydrogenbinding. Det kan da tiltrekkes av et egnet O-, N- eller F-atom med et ledig elektronpar i et nabomolekyl. Hydrogenbindingen mellom vannmolekyler er ikke O–H-bindingen inni vannmolekylet. Metan får ikke hydrogenbinding mellom molekylene bare fordi det inneholder hydrogen.",
+      "defaultHints": [
+        "Hvilket atom er hydrogen bundet direkte til?",
+        "Undersøk om det finnes en egnet mottaker i nabomolekylet."
+      ],
+      "sourceRefs": [
+        "F2",
+        "F3",
+        "N6",
+        "O4"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C13"
+      ]
+    },
+    {
+      "id": "forces.boiling",
+      "moduleId": "m06",
+      "title": "Hva skjer ved koking?",
+      "objective": "Koble kokepunkt til kreftene som må overvinnes mellom molekyler.",
+      "lesson": "Når et molekylstoff koker uten å reagere eller spaltes, kommer molekylene lenger fra hverandre. Molekylene selv bevares. Det er derfor misvisende å si at vann blir til hydrogen og oksygen når det koker. Sterkere tiltrekning mellom sammenlignbare molekyler krever mer energi å overvinne. Størrelse og form betyr også noe, så en enkelt bindingstype bestemmer ikke kokepunktet til alle stoffer.",
+      "defaultHints": [
+        "Følg ett helt molekyl gjennom faseendringen.",
+        "Er det kreftene mellom molekyler eller bindingene inni dem som må overvinnes?"
+      ],
+      "sourceRefs": [
+        "F3",
+        "F4",
+        "N7",
+        "O4"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C13"
+      ]
+    },
+    {
+      "id": "carbon.valence",
+      "moduleId": "m07",
+      "title": "Karbonets fire bindinger",
+      "objective": "Tell bindingsorden og fyll riktige plasser med hydrogen.",
+      "lesson": "I de nøytrale karbonforbindelsene vi bygger, har hvert karbon en samlet bindingsorden på fire. En enkeltbinding teller én, en dobbeltbinding to og en trippelbinding tre. Et karbon trenger derfor ikke fire forskjellige naboatomer. Hydrogen har én binding, og oksygen har vanligvis to i disse modellene. Kontroller hvert atom, ikke bare summen av alle atomer.",
+      "defaultHints": [
+        "Tell streker, ikke bare antall naboer.",
+        "Hvor mange av karbonets fire bindingsmuligheter er allerede brukt?"
+      ],
+      "sourceRefs": [
+        "F3",
+        "F5",
+        "N2"
+      ],
+      "origin": "course",
+      "clarificationIds": []
+    },
+    {
+      "id": "carbon.families",
+      "moduleId": "m07",
+      "title": "Alkan, alken eller alkyn",
+      "objective": "Klassifiser enkle hydrokarboner ut fra karbonbindingene.",
+      "lesson": "Hydrokarboner inneholder bare karbon og hydrogen. Alkaner har bare enkeltbindinger mellom karbonatomene. Alkener har minst én karbon–karbon-dobbeltbinding, og alkyner minst én karbon–karbon-trippelbinding. Vi bruker enkle, åpne kjeder i oppgavene. Metan, etan, eten, etyn, propan, butan og pentan er sentrale eksempler.",
+      "defaultHints": [
+        "Sjekk først hvilke grunnstoffer stoffet inneholder.",
+        "Se deretter på bindingen eller bindingene mellom karbonatomene."
+      ],
+      "sourceRefs": [
+        "F3",
+        "F5",
+        "O6"
+      ],
+      "origin": "course",
+      "clarificationIds": []
+    },
+    {
+      "id": "carbon.isomers",
+      "moduleId": "m07",
+      "title": "Samme formel, ulik oppbygning",
+      "objective": "Skill en ny struktur fra en rotert tegning av samme molekyl.",
+      "lesson": "To molekyler kan ha samme molekylformel, men ulik sammenkobling av atomene. Butan har en uforgrenet kjede med fire karbonatomer. Isobutan har en forgrening. Isobutan og 2-metylpropan er to navn på samme forbindelse. Å rotere eller bøye en tegning uten å endre hvilke atomer som er bundet til hverandre lager ikke en ny strukturisomer.",
+      "defaultHints": [
+        "Følg hvilke karbonatomer som er naboer.",
+        "Finnes det et karbon som er bundet til tre andre karbonatomer?"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O6"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C10"
+      ]
+    },
+    {
+      "id": "alcohol.groups",
+      "moduleId": "m08",
+      "title": "Finn alkoholgruppen",
+      "objective": "Gjenkjenn en alkoholgruppe uten å forveksle den med karboksylgruppe eller hydroksidion.",
+      "lesson": "Alkoholene i dette kurset har en hydroksylgruppe, –OH, bundet til et karbonatom som ikke er et karbonylkarbon. I etanol er OH-gruppen bundet kovalent til karbonkjeden. Gruppen er ikke et fritt hydroksidion. En –COOH-gruppe inneholder også O og H, men er en karboksylgruppe og klassifiseres som syregruppe, ikke som alkoholgruppen i disse oppgavene.",
+      "defaultHints": [
+        "Se på hele gruppen rundt O og H.",
+        "Er OH festet til et vanlig karbon i kjeden, eller inngår det i en COOH-gruppe?"
+      ],
+      "sourceRefs": [
+        "F3",
+        "F5",
+        "O7",
+        "O8"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C08",
+        "C11"
+      ]
+    },
+    {
+      "id": "alcohol.properties",
+      "moduleId": "m08",
+      "title": "Alkoholer og vann",
+      "objective": "Koble en kort alkohols OH-gruppe til hydrogenbinding og vannløselighet.",
+      "lesson": "OH-gruppen gir korte alkoholer mulighet til å danne hydrogenbindinger med vann og med hverandre. Etanol blandes godt med vann og har høyere kokepunkt enn etan. Karbonkjeden er den upolare delen. Når den upolare kjeden blir mye lengre, blir én OH-gruppe mindre dominerende. Derfor skal vi ikke gjøre etanol til en regel om at alle alkoholer løses like godt i vann.",
+      "defaultHints": [
+        "Finn både den polare og den upolare delen.",
+        "Hva endres når karbonkjeden blir lengre, men antallet OH-grupper er uendret?"
+      ],
+      "sourceRefs": [
+        "F3",
+        "F4",
+        "O7"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C08"
+      ]
+    },
+    {
+      "id": "acid.structures",
+      "moduleId": "m08",
+      "title": "Karboksylgruppen",
+      "objective": "Bygg metansyre og etansyre med riktig COOH-gruppe.",
+      "lesson": "Karboksylgruppen inneholder et karbon med en dobbeltbinding til ett oksygen og en enkeltbinding til et annet oksygen som også er bundet til hydrogen. Metansyre og etansyre er korte karboksylsyrer som er med i byggearket. Vi bruker dem til å øve på COOH. De er ikke eksemplene våre på lange fettsyrer.",
+      "defaultHints": [
+        "Finn karbonet som er bundet til to oksygenatomer.",
+        "Det ene oksygenet har dobbeltbinding. Det andre er også bundet til hydrogen."
+      ],
+      "sourceRefs": [
+        "F3",
+        "F5",
+        "O8"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C11"
+      ]
+    },
+    {
+      "id": "fat.structure",
+      "moduleId": "m09",
+      "title": "Polar ende og upolar kjede",
+      "objective": "Gjenkjenn delene av en fri fettsyre og skill den fra et helt fettmolekyl.",
+      "lesson": "En fettsyre i kursets modell har en lang hydrokarbonkjede og en karboksylgruppe. Kjeden er upolar, mens syreenden er polar. Bildet i presentasjonen viser også et større fettmolekyl der tre fettsyrerester er bundet til glyserol. Dette er et triglyserid, ikke én fri fettsyre. Matolje består derfor ikke bare av rene hydrokarboner, selv om store deler av molekylene er upolare.",
+      "defaultHints": [
+        "Se etter både den lange kjeden og gruppen på enden.",
+        "Er det én fri syregruppe eller tre kjeder bundet til et større midtparti?"
+      ],
+      "sourceRefs": [
+        "F3",
+        "O9"
+      ],
+      "origin": "clarification",
+      "clarificationIds": [
+        "C09"
+      ]
+    },
+    {
+      "id": "fat.saturation",
+      "moduleId": "m09",
+      "title": "Mettet eller umettet",
+      "objective": "Se etter dobbeltbindinger mellom karbonatomer, ikke i syregruppen.",
+      "lesson": "En mettet fettsyre har bare enkeltbindinger mellom karbonatomene i kjeden. En umettet fettsyre har én eller flere karbon–karbon-dobbeltbindinger. Dobbeltbindingen mellom karbon og oksygen i COOH finnes også i mettede fettsyrer og er ikke det vi teller her. Én dobbeltbinding i kjeden gir enumettet; flere gir flerumettet.",
+      "defaultHints": [
+        "Se bare på bindingene mellom karbonatomene i kjeden.",
+        "Ikke tell dobbeltbindingen til oksygen i syregruppen."
+      ],
+      "sourceRefs": [
+        "F3",
+        "O9"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C09"
+      ]
+    },
+    {
+      "id": "fat.packing",
+      "moduleId": "m09",
+      "title": "Hvordan kjedene pakkes",
+      "objective": "Bruk en cis-knekk til å forklare en vanlig forskjell i smeltepunkt.",
+      "lesson": "En cis-dobbeltbinding lager en knekk i fettsyrekjeden. Slike kjeder pakkes gjerne mindre tett enn sammenlignbare mettede kjeder. Det bidrar til lavere smeltepunkt. Dette hjelper oss å forklare hvorfor mange planteoljer er flytende og smør ofte fastere ved romtemperatur. Matfett er blandinger, og vi sier ofte, ikke alltid. Ikke alle umettede kjeder har samme form.",
+      "defaultHints": [
+        "Sammenlign hvor tett kjedene kan ligge ved siden av hverandre.",
+        "Tenk på smelting og pakking, ikke på at dobbeltbindingen inne i kjeden skal brytes."
+      ],
+      "sourceRefs": [
+        "F3",
+        "F4",
+        "O9"
+      ],
+      "origin": "clarification",
+      "clarificationIds": [
+        "C09"
+      ]
+    },
+    {
+      "id": "apply.solubility",
+      "moduleId": "m10",
+      "title": "Likt løser likt",
+      "objective": "Bruk polaritet og intermolekylære krefter til å forklare blanding.",
+      "lesson": "Likt løser likt er en nyttig huskeregel. Vann er polart og kan danne hydrogenbindinger. Etanol kan inngå i slike tiltrekninger med vann. Bensin består i stor grad av upolare hydrokarboner og blandes dårlig med vann. Matolje er hovedsakelig triglyserider med store upolare deler. At noe ikke løses, betyr ikke at molekylene mangler alle tiltrekningskrefter.",
+      "defaultHints": [
+        "Hvilke deler av hvert stoff er polare eller upolare?",
+        "Kan det nye stoffet samvirke godt med vannmolekylene?"
+      ],
+      "sourceRefs": [
+        "F3",
+        "F4",
+        "N7",
+        "O7",
+        "O9"
+      ],
+      "origin": "course",
+      "clarificationIds": [
+        "C09",
+        "C13"
+      ]
+    },
+    {
+      "id": "apply.soap",
+      "moduleId": "m10",
+      "title": "Hvorfor virker såpe?",
+      "objective": "Koble såpens to ulike deler til fjerning av olje.",
+      "lesson": "I den enkle såpemodellen er hydrokarbonhalen upolar, mens hodet er et ladet karboksylat. Halene kan vende inn mot fett og olje. Hodene vender mot vannet. Da kan små oljedråper eller fett bli omgitt av såpe og føres bort med vann. Vi viser en forenklet micelle. Hydrogenbinding forklarer viktige forhold i vann, men såpehodets kontakt med vann forklares særlig med tiltrekning mellom ionet og de polare vannmolekylene.",
+      "defaultHints": [
+        "Hvilken del av såpen passer best sammen med oljen?",
+        "Hvilken del kan vende ut mot det polare vannet?"
+      ],
+      "sourceRefs": [
+        "F4",
+        "O10"
+      ],
+      "origin": "supplement",
+      "clarificationIds": [
+        "C16"
+      ]
+    },
+    {
+      "id": "apply.explain",
+      "moduleId": "m10",
+      "title": "Bygg en forklaring",
+      "objective": "Knytt struktur til krefter og deretter til egenskapen du observerer.",
+      "lesson": "En god forklaring knytter det du ser i strukturen til hvilke krefter som virker, og deretter til en egenskap. Ikke stopp ved navnet på stoffet. Bruk fordi når du kobler leddene sammen. Du kan øve med ordbrikker først og skrive med egne ord etterpå. Frie svar får en sjekkliste til egenvurdering, ikke en påstått automatisk språkforståelse.",
+      "defaultHints": [
+        "Hvilken detalj i strukturen er viktig i denne oppgaven?",
+        "Hvilken kraft følger av detaljen, og hva betyr det for egenskapen?"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F5"
+      ],
+      "origin": "course",
+      "clarificationIds": []
+    }
+  ]
+}

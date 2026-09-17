@@ -1,0 +1,604 @@
+{
+  "schemaVersion": 1,
+  "tasks": [
+    {
+      "id": "teacher-simple-1",
+      "section": "Enkle spørsmål",
+      "prompt": "Hvilke grunnstoffer består hydrokarboner av?",
+      "skillIds": [
+        "carbon.families"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F3",
+        "F5",
+        "O6"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Se på navnet hydrokarbon.",
+        "Sammenlign atomtypene i metan og etan."
+      ],
+      "rubric": [
+        "Nevner karbon.",
+        "Nevner hydrogen.",
+        "Ingen andre grunnstoffer inngår i definisjonen."
+      ],
+      "modelAnswer": "Hydrokarboner består bare av karbon og hydrogen.",
+      "clarification": null,
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F3",
+        "F5",
+        "O6"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-simple-2",
+      "section": "Enkle spørsmål",
+      "prompt": "Hva er en kovalent binding?",
+      "skillIds": [
+        "bond.covalent"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F2",
+        "N2"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Tenk på hva som skjer med elektronene mellom to ikke-metaller.",
+        "Sammenlign det å dele med det å gi helt fra seg."
+      ],
+      "rubric": [
+        "Forklarer at atomene deler elektronpar.",
+        "Bruker ikke elektronoverføring som hovedforklaring."
+      ],
+      "modelAnswer": "En kovalent binding er en elektronparbinding der atomer deler ett eller flere elektronpar.",
+      "clarification": null,
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F2",
+        "N2"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-simple-3",
+      "section": "Enkle spørsmål",
+      "prompt": "Hva er forskjellen på et alkan og et alken?",
+      "skillIds": [
+        "carbon.families"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F3",
+        "F5",
+        "O6"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Se på strukturene til etan og eten.",
+        "Tell strekene mellom karbonatomene."
+      ],
+      "rubric": [
+        "Alkan har bare enkeltbindinger mellom karbon.",
+        "Alken har minst én C=C-binding."
+      ],
+      "modelAnswer": "Et alkan har bare enkeltbindinger mellom karbonatomene. Et alken har minst én dobbeltbinding mellom karbonatomer.",
+      "clarification": null,
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F3",
+        "F5",
+        "O6"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-simple-4",
+      "section": "Enkle spørsmål",
+      "prompt": "Hva menes med at et molekyl er upolart?",
+      "skillIds": [
+        "polarity.shape",
+        "polarity.classify"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F1",
+        "N8",
+        "O5",
+        "F2",
+        "N2"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Vurder hele molekylet, ikke bare én binding.",
+        "Kan symmetri oppheve skjevheten fra flere bindinger?"
+      ],
+      "rubric": [
+        "Forklarer at molekylet ikke har en permanent samlet dipol.",
+        "Skiller mellom upolaritet og fravær av alle tiltrekningskrefter."
+      ],
+      "modelAnswer": "Et upolart molekyl har ikke en permanent samlet skjev ladningsfordeling med en positiv og en negativ ende. Det kan likevel ha polare bindinger som opphever hverandre, og dispersjonskrefter mellom molekyler.",
+      "clarification": null,
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F1",
+        "N8",
+        "O5",
+        "F2",
+        "N2"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-simple-5",
+      "section": "Enkle spørsmål",
+      "prompt": "Hvilken funksjonell gruppe kjennetegner alkoholer?",
+      "skillIds": [
+        "alcohol.groups"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F3",
+        "F5",
+        "O7",
+        "O8"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Se på etanolmodellen.",
+        "Finn gruppen som inneholder oksygen og hydrogen."
+      ],
+      "rubric": [
+        "Navngir hydroksylgruppen.",
+        "Kjenner skrivemåten OH."
+      ],
+      "modelAnswer": "Alkoholene vi arbeider med kjennetegnes av en hydroksylgruppe, –OH, bundet til karbonkjeden.",
+      "clarification": null,
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F3",
+        "F5",
+        "O7",
+        "O8"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-simple-6",
+      "section": "Enkle spørsmål",
+      "prompt": "Hvilken funksjonell gruppe kjennetegner fettsyrer?",
+      "skillIds": [
+        "acid.structures",
+        "fat.structure"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F3",
+        "F5",
+        "O8",
+        "O9"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Se på enden av en fri fettsyre.",
+        "Gruppen inneholder to oksygenatomer."
+      ],
+      "rubric": [
+        "Navngir karboksylgruppen.",
+        "Kjenner skrivemåten COOH."
+      ],
+      "modelAnswer": "Frie fettsyrer har en karboksylgruppe, –COOH, på enden av hydrokarbonkjeden.",
+      "clarification": null,
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F3",
+        "F5",
+        "O8",
+        "O9"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-simple-7",
+      "section": "Enkle spørsmål",
+      "prompt": "Hva er forskjellen på mettede og umettede fettsyrer?",
+      "skillIds": [
+        "fat.saturation"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F3",
+        "O9"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Se på karbonkjeden.",
+        "Ikke la dobbeltbindingen til oksygen i syregruppen avgjøre svaret."
+      ],
+      "rubric": [
+        "Mettet har ingen C=C i kjeden.",
+        "Umettet har én eller flere C=C i kjeden.",
+        "Teller ikke C=O i COOH."
+      ],
+      "modelAnswer": "Mettede fettsyrer har bare enkeltbindinger mellom karbonatomene. Umettede fettsyrer har én eller flere karbon–karbon-dobbeltbindinger. C=O i syregruppen teller ikke her.",
+      "clarification": null,
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F3",
+        "O9"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-explain-1",
+      "section": "Forklaringsspørsmål",
+      "prompt": "Hvorfor kan karbon danne så mange ulike organiske forbindelser?",
+      "skillIds": [
+        "carbon.valence",
+        "carbon.isomers"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F3",
+        "F5",
+        "N2",
+        "O6"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Begynn med hvor mange bindinger karbon kan danne.",
+        "Sammenlign etan, eten og butan med en forgrenet modell."
+      ],
+      "rubric": [
+        "Karbon kan ha samlet bindingsorden fire.",
+        "Karbon kan binde seg til andre karbonatomer.",
+        "Kjeder, forgreninger og ulike bindingsordener gir variasjon."
+      ],
+      "modelAnswer": "Karbon kan danne fire bindinger, regnet med bindingsorden, og binde seg til andre karbonatomer. Det gir kjeder og forgreninger med ulik lengde. Enkelt-, dobbelt- og trippelbindinger og ulike funksjonelle grupper gir enda flere strukturer.",
+      "clarification": null,
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F3",
+        "F5",
+        "N2",
+        "O6"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-explain-2",
+      "section": "Forklaringsspørsmål",
+      "prompt": "Hvorfor har hydrokarboner ofte lave koke- og smeltepunkter sammenlignet med mange salter?",
+      "skillIds": [
+        "forces.types",
+        "forces.boiling",
+        "ion.properties"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F2",
+        "F3",
+        "N7",
+        "O4",
+        "N3"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Sammenlign partiklene i et molekylstoff med partiklene i et salt.",
+        "Hvilke krefter må overvinnes ved en faseendring?"
+      ],
+      "rubric": [
+        "Avgrenser forklaringen særlig til små/korte hydrokarboner.",
+        "Skiller krefter mellom molekyler fra kovalente bindinger inni dem.",
+        "Sammenligner med sterke tiltrekninger i saltets ionegitter."
+      ],
+      "modelAnswer": "Små hydrokarboner består av molekyler med relativt svake dispersjonskrefter mellom seg. Det kreves ofte mindre energi å overvinne disse enn å bryte opp et sterkt ionegitter i et salt. Det betyr ikke at C–C- og C–H-bindingene inni hydrokarbonet er svake. Lengre hydrokarboner kan ha langt høyere koke- og smeltepunkter.",
+      "clarification": "Lærerens spørsmål sier hydrokarboner generelt. I svaret presiserer vi særlig små eller korte hydrokarboner, ikke en universell regel.",
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F2",
+        "F3",
+        "N7",
+        "O4",
+        "F4",
+        "N3"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-explain-3",
+      "section": "Forklaringsspørsmål",
+      "prompt": "Hvorfor løses etanol godt i vann, mens bensin ikke gjør det?",
+      "skillIds": [
+        "alcohol.properties",
+        "apply.solubility"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F3",
+        "O7",
+        "N7",
+        "O9"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Finn forskjellen i struktur mellom etanol og et hydrokarbon.",
+        "Hvilke krefter kan OH-gruppen gi med vann?"
+      ],
+      "rubric": [
+        "Etanol har OH-gruppe.",
+        "Hydrogenbinding med vann.",
+        "Bensin består hovedsakelig av upolare hydrokarboner.",
+        "Bruker likt løser likt som huskeregel, ikke fullstendig naturregel."
+      ],
+      "modelAnswer": "Etanols OH-gruppe kan danne hydrogenbindinger med de polare vannmolekylene. Bensin består hovedsakelig av upolare hydrokarboner og samvirker ikke tilsvarende godt med vann. Derfor blandes etanol godt med vann, mens bensin skiller seg ut. Dette passer med huskeregelen likt løser likt.",
+      "clarification": null,
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F3",
+        "F4",
+        "O7",
+        "N7",
+        "O9"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-explain-4",
+      "section": "Forklaringsspørsmål",
+      "prompt": "Hvorfor er etanol væske ved romtemperatur, mens etan er gass?",
+      "skillIds": [
+        "alcohol.properties",
+        "forces.boiling"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F3",
+        "O7",
+        "N7",
+        "O4"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Hvilken funksjonell gruppe skiller dem?",
+        "Hvordan påvirker kreftene mellom molekylene kokepunktet?"
+      ],
+      "rubric": [
+        "Etanol kan danne hydrogenbindinger.",
+        "Etan har ikke slik hydrogenbinding mellom egne molekyler.",
+        "Kobler sterkere tiltrekning til høyere kokepunkt."
+      ],
+      "modelAnswer": "Etanol kan danne hydrogenbindinger mellom molekylene via OH-gruppen. Etan har ikke denne muligheten. Etanol har derfor høyere kokepunkt enn etan og er væske ved vanlige romforhold, mens etan er gass.",
+      "clarification": "Vanlige romforhold og omtrent atmosfærisk trykk er underforstått. Ikke legg inn usjekkede eksakte temperaturer.",
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F3",
+        "F4",
+        "O7",
+        "N7",
+        "O4"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-explain-5",
+      "section": "Forklaringsspørsmål",
+      "prompt": "Hvorfor er mange vegetabilske oljer flytende ved romtemperatur, mens smør ofte er fast?",
+      "skillIds": [
+        "fat.saturation",
+        "fat.packing"
+      ],
+      "sourceRefs": [
+        "F4",
+        "F3",
+        "O9"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Sammenlign rette kjeder med kjeder som har cis-knekk.",
+        "Hva betyr tett pakking for hvor lett blandingen smelter?"
+      ],
+      "rubric": [
+        "Bruker forskjell i andel cis-umettede og mettede fettsyrerester.",
+        "Forklarer knekk og dårligere pakking.",
+        "Kobler til lavere smeltepunkt.",
+        "Sier mange/ofte, siden dette er blandinger og har unntak."
+      ],
+      "modelAnswer": "Mange vegetabilske oljer har en større andel cis-umettede fettsyrerester. Knekkene gjør det vanskeligere å pakke kjedene tett, noe som bidrar til lavere smeltepunkt. Smør har ofte mer mettede fettsyrerester og er derfor gjerne fastere ved romtemperatur. Begge er blandinger, så dette er en vanlig forklaring, ikke en regel uten unntak.",
+      "clarification": null,
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F3",
+        "O9",
+        "F4"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    },
+    {
+      "id": "teacher-reflection",
+      "section": "Avsluttende refleksjonsspørsmål",
+      "prompt": "Du søler matolje på hendene og prøver først å vaske den bort med vann, men det fungerer dårlig. Når du bruker såpe, forsvinner oljen mye lettere. Forklar hva som skjer ved å bruke begrepene polar, upolar, hydrokarbonkjede, hydrogenbinding og «likt løser likt». Begrunn svaret med kunnskap om kjemiske bindinger.",
+      "skillIds": [
+        "apply.soap",
+        "apply.solubility",
+        "fat.structure",
+        "forces.hydrogen"
+      ],
+      "sourceRefs": [
+        "F4",
+        "O10",
+        "N3",
+        "N6",
+        "F3",
+        "N7",
+        "O7",
+        "O9",
+        "F2",
+        "O4"
+      ],
+      "grading": "self_assessment_only",
+      "hints": [
+        "Beskriv først forskjellen på vannet og de store delene av oljemolekylene.",
+        "Plasser såpens hydrokarbonhale og ladde hode mellom vannet og oljen."
+      ],
+      "rubric": [
+        "Vann er polart og vannmolekyler danner hydrogenbindinger med hverandre.",
+        "Matoljens store hydrokarbondeler er upolare, så vann alene fungerer dårlig.",
+        "Såpe har en upolar hale og et vannvennlig ladet hode.",
+        "Halene vender mot oljen og hodene mot vannet, slik at olje kan føres bort.",
+        "Bruker likt løser likt uten å påstå at såpe omdanner olje til vann.",
+        "Skiller såpehodets ion–dipol-samvirke fra vannets hydrogenbindinger."
+      ],
+      "modelAnswer": "Vann er polart, og vannmolekylene danner hydrogenbindinger med hverandre. Matolje har store upolare hydrokarbondeler og blandes derfor dårlig med vann, i tråd med likt løser likt. Såpe har en upolar hydrokarbonhale og et ladet, vannvennlig hode. Halene kan vende inn mot oljen, mens hodene samvirker med vannet. Oljen kan da fordeles i små såpeomgitte dråper eller miceller som skylles bort. Hydrogenbindinger er viktige mellom vannmolekyler, mens tiltrekningen mellom såpehodet og vann særlig beskrives som ion–dipol-samvirke.",
+      "clarification": "Miceller og såpehodets ladning er merkede tilleggsforklaringer fra OpenStax, nødvendige for å forklare lærerens refleksjon presist.",
+      "answerReveal": "explicit_button_after_attempt_or_explicit_skip",
+      "countsAsIndependentMastery": false,
+      "promptSourceRefs": [
+        "F4"
+      ],
+      "answerSourceRefs": [
+        "F4",
+        "O10",
+        "F3",
+        "N7",
+        "O7",
+        "O9",
+        "F2",
+        "N6",
+        "O4"
+      ],
+      "answerAuthorship": "Authored model answer, not a supplied teacher answer key. The prompt comes from F4; the answer is grounded in the listed course and supplementary sources."
+    }
+  ],
+  "buildingReflections": [
+    {
+      "id": "build-reflection-1",
+      "prompt": "Hvor mange bindinger har hvert karbonatom i modellen din?",
+      "guidance": "Tell samlet bindingsorden ved hvert karbon, ikke bare naboatomer.",
+      "personalReflection": false,
+      "grading": "not_automatically_graded",
+      "countsAsIndependentMastery": false,
+      "sourceRefs": [
+        "F5"
+      ]
+    },
+    {
+      "id": "build-reflection-2",
+      "prompt": "Finn ett molekyl med dobbelt- eller trippelbinding. Hvor sitter bindingen?",
+      "guidance": "Marker den aktuelle bindingen i din modell og oppgi hvilke atomer den binder.",
+      "personalReflection": false,
+      "grading": "not_automatically_graded",
+      "countsAsIndependentMastery": false,
+      "sourceRefs": [
+        "F5"
+      ]
+    },
+    {
+      "id": "build-reflection-3",
+      "prompt": "Hvilket molekyl har bare enkeltbindinger?",
+      "guidance": "Flere av modellene kan passe. Kontroller alle bindinger i molekylet du velger.",
+      "personalReflection": false,
+      "grading": "not_automatically_graded",
+      "countsAsIndependentMastery": false,
+      "sourceRefs": [
+        "F5"
+      ]
+    },
+    {
+      "id": "build-reflection-4",
+      "prompt": "Sammenlign etan og eten. Hva er forskjellen?",
+      "guidance": "Beskriv både karbonbindingen og antall hydrogenatomer.",
+      "personalReflection": false,
+      "grading": "not_automatically_graded",
+      "countsAsIndependentMastery": false,
+      "sourceRefs": [
+        "F5"
+      ]
+    },
+    {
+      "id": "build-reflection-5",
+      "prompt": "Finn et molekyl med en OH-gruppe. Hvor sitter den?",
+      "guidance": "Marker O og H i alkoholgruppen. Skill gruppen fra en OH-del som inngår i COOH.",
+      "personalReflection": false,
+      "grading": "not_automatically_graded",
+      "countsAsIndependentMastery": false,
+      "sourceRefs": [
+        "F5"
+      ]
+    },
+    {
+      "id": "build-reflection-6",
+      "prompt": "Se på butan og isobutan. Hva er forskjellen på formen?",
+      "guidance": "Følg hvilke karbonatomer som er koblet til hverandre og beskriv forgreningen.",
+      "personalReflection": false,
+      "grading": "not_automatically_graded",
+      "countsAsIndependentMastery": false,
+      "sourceRefs": [
+        "F5"
+      ]
+    },
+    {
+      "id": "build-reflection-7",
+      "prompt": "Hvilket molekyl var vanskeligst å bygge? Hvorfor?",
+      "guidance": "Dette er din erfaring. Det finnes ikke ett riktig svar.",
+      "personalReflection": true,
+      "grading": "not_automatically_graded",
+      "countsAsIndependentMastery": false,
+      "sourceRefs": [
+        "F5"
+      ]
+    }
+  ]
+}

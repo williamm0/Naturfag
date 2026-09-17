@@ -1,0 +1,965 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Required scenarios to implement as automated tests where possible and browser checks where necessary. These are specifications, not claims that the future application has passed them.",
+  "gradingOutcomeContract": {
+    "correct": "Objectively matches the supported keyed response.",
+    "incorrect": "Supported input but not the keyed answer.",
+    "invalid_format": "Missing, malformed or explicitly unsupported notation. Request supported input without inventing a chemical verdict.",
+    "needs_self_check": "Unrecognized wording must not be treated as independently correct."
+  },
+  "gradingCases": [
+    {
+      "id": "grade-01",
+      "questionId": "q001",
+      "response": "o0",
+      "expectedOutcome": "correct",
+      "reason": "Correctness follows the stable option ID after every display shuffle."
+    },
+    {
+      "id": "grade-02",
+      "questionId": "q001",
+      "response": "o1",
+      "expectedOutcome": "incorrect",
+      "reason": "The first visible option is not necessarily the keyed option."
+    },
+    {
+      "id": "grade-03",
+      "questionId": "q002",
+      "response": "  NØYTRONET  ",
+      "expectedOutcome": "correct",
+      "reason": "Case and surrounding whitespace normalize for terms."
+    },
+    {
+      "id": "grade-04",
+      "questionId": "q002",
+      "response": "nøytron med positiv ladning",
+      "expectedOutcome": "needs_self_check",
+      "reason": "A recognized substring inside arbitrary prose must not be graded as correct."
+    },
+    {
+      "id": "grade-05",
+      "questionId": "q008",
+      "response": "6",
+      "expectedOutcome": "correct",
+      "reason": "Exact numeric answer."
+    },
+    {
+      "id": "grade-06",
+      "questionId": "q008",
+      "response": "6 elektroner",
+      "expectedOutcome": "invalid_format",
+      "reason": "The numeric field requires a whole number, not a numeric prefix."
+    },
+    {
+      "id": "grade-07",
+      "questionId": "q041",
+      "response": "0,9",
+      "expectedOutcome": "correct",
+      "reason": "Norwegian decimal comma is accepted."
+    },
+    {
+      "id": "grade-08",
+      "questionId": "q041",
+      "response": "0.9",
+      "expectedOutcome": "correct",
+      "reason": "Decimal point is also accepted."
+    },
+    {
+      "id": "grade-09",
+      "questionId": "q041",
+      "response": "0,9abc",
+      "expectedOutcome": "invalid_format",
+      "reason": "Trailing junk must not pass parseFloat-style grading."
+    },
+    {
+      "id": "grade-10",
+      "questionId": "q041",
+      "response": "9",
+      "expectedOutcome": "incorrect",
+      "reason": "Do not confuse decimal comma with a thousands separator."
+    },
+    {
+      "id": "grade-11",
+      "questionId": "q052",
+      "response": "",
+      "expectedOutcome": "invalid_format",
+      "reason": "An empty numeric field is not zero."
+    },
+    {
+      "id": "grade-12",
+      "questionId": "q052",
+      "response": "   ",
+      "expectedOutcome": "invalid_format",
+      "reason": "Whitespace alone is not zero."
+    },
+    {
+      "id": "grade-13",
+      "questionId": "q052",
+      "response": "0",
+      "expectedOutcome": "correct",
+      "reason": "A deliberate numeric zero is valid."
+    },
+    {
+      "id": "grade-14",
+      "questionId": "q052",
+      "response": "Infinity",
+      "expectedOutcome": "invalid_format",
+      "reason": "Non-finite numbers are not valid answers."
+    },
+    {
+      "id": "grade-15",
+      "questionId": "q052",
+      "response": "NaN",
+      "expectedOutcome": "invalid_format",
+      "reason": "NaN is not valid numeric input."
+    },
+    {
+      "id": "grade-16",
+      "questionId": "q028",
+      "response": {
+        "p": "17",
+        "e": "18",
+        "charge": "−1"
+      },
+      "expectedOutcome": "correct",
+      "reason": "Unicode minus normalizes; all fields are correct."
+    },
+    {
+      "id": "grade-17",
+      "questionId": "q028",
+      "response": {
+        "p": "17",
+        "e": "18",
+        "charge": ""
+      },
+      "expectedOutcome": "invalid_format",
+      "reason": "One missing field prevents a correct result."
+    },
+    {
+      "id": "grade-18",
+      "questionId": "q028",
+      "response": {
+        "p": "17",
+        "e": "16",
+        "charge": "1"
+      },
+      "expectedOutcome": "incorrect",
+      "reason": "Gaining an electron does not remove it."
+    },
+    {
+      "id": "grade-19",
+      "questionId": "q026",
+      "response": {
+        "p": "12",
+        "e": "10",
+        "charge": "+2"
+      },
+      "expectedOutcome": "correct",
+      "reason": "Leading plus is valid in a signed numeric charge field."
+    },
+    {
+      "id": "grade-20",
+      "questionId": "q029",
+      "response": {
+        "calcium": "2",
+        "chloride": "4"
+      },
+      "expectedOutcome": "incorrect",
+      "reason": "The prompt requests the smallest neutral integer ratio."
+    },
+    {
+      "id": "grade-21",
+      "questionId": "q031",
+      "response": "MgO",
+      "expectedOutcome": "correct",
+      "reason": "Correct minimal salt formula."
+    },
+    {
+      "id": "grade-22",
+      "questionId": "q031",
+      "response": "Mg2O2",
+      "expectedOutcome": "incorrect",
+      "reason": "Equal proportions are not the requested minimal formula."
+    },
+    {
+      "id": "grade-23",
+      "questionId": "q031",
+      "response": "mgO",
+      "expectedOutcome": "invalid_format",
+      "reason": "Do not repair element-symbol case silently."
+    },
+    {
+      "id": "grade-24",
+      "questionId": "q072",
+      "response": "H₂O",
+      "expectedOutcome": "correct",
+      "reason": "Unicode subscript digits normalize."
+    },
+    {
+      "id": "grade-25",
+      "questionId": "q072",
+      "response": "OH2",
+      "expectedOutcome": "correct",
+      "reason": "Whole-formula grading compares exact atom counts."
+    },
+    {
+      "id": "grade-26",
+      "questionId": "q072",
+      "response": "H2O2",
+      "expectedOutcome": "incorrect",
+      "reason": "Wrong atom counts cannot pass as approximately correct."
+    },
+    {
+      "id": "grade-27",
+      "questionId": "q072",
+      "response": "H2O+",
+      "expectedOutcome": "invalid_format",
+      "reason": "Do not delete an ionic charge to match a neutral formula."
+    },
+    {
+      "id": "grade-28",
+      "questionId": "q082",
+      "response": "CH3CH2CH2CH3",
+      "expectedOutcome": "correct",
+      "reason": "A supported linear condensed formula sums to the requested molecular formula."
+    },
+    {
+      "id": "grade-29",
+      "questionId": "q082",
+      "response": "C8H20",
+      "expectedOutcome": "incorrect",
+      "reason": "Exact molecular counts are required, not a reduced ratio."
+    },
+    {
+      "id": "grade-30",
+      "questionId": "q082",
+      "response": "(CH3)3CH",
+      "expectedOutcome": "invalid_format",
+      "reason": "Parentheses are outside the declared initial parser; request supported notation without claiming the chemistry impossible."
+    },
+    {
+      "id": "grade-31",
+      "questionId": "q093",
+      "response": "COOH",
+      "expectedOutcome": "correct",
+      "reason": "This functional-group field matches condensed group notation."
+    },
+    {
+      "id": "grade-32",
+      "questionId": "q093",
+      "response": "–COOH",
+      "expectedOutcome": "correct",
+      "reason": "A leading drawn-bond dash is permitted for this group only."
+    },
+    {
+      "id": "grade-33",
+      "questionId": "q093",
+      "response": "CHO2",
+      "expectedOutcome": "incorrect",
+      "reason": "Do not reorder a functional group into an unordered molecular composition."
+    },
+    {
+      "id": "grade-34",
+      "questionId": "q093",
+      "response": "cooh",
+      "expectedOutcome": "invalid_format",
+      "reason": "Case remains chemically significant in group notation."
+    },
+    {
+      "id": "grade-35",
+      "questionId": "q074",
+      "response": {
+        "left": "2",
+        "right": "2"
+      },
+      "expectedOutcome": "correct",
+      "reason": "Both carbon valences are completed."
+    },
+    {
+      "id": "grade-36",
+      "questionId": "q074",
+      "response": {
+        "left": "2",
+        "right": "3"
+      },
+      "expectedOutcome": "incorrect",
+      "reason": "A correct subpart does not make the whole response independently correct."
+    },
+    {
+      "id": "grade-37",
+      "questionId": "q088",
+      "response": [
+        "o1",
+        "h-o1-1"
+      ],
+      "expectedOutcome": "correct",
+      "reason": "The exact OH atom set is selected."
+    },
+    {
+      "id": "grade-38",
+      "questionId": "q088",
+      "response": [
+        "h-o1-1",
+        "o1"
+      ],
+      "expectedOutcome": "correct",
+      "reason": "Selection order is irrelevant."
+    },
+    {
+      "id": "grade-39",
+      "questionId": "q088",
+      "response": [
+        "o1"
+      ],
+      "expectedOutcome": "incorrect",
+      "reason": "Selecting only the oxygen is incomplete."
+    },
+    {
+      "id": "grade-40",
+      "questionId": "q088",
+      "response": [
+        "o1",
+        "h-o1-1",
+        "c2"
+      ],
+      "expectedOutcome": "incorrect",
+      "reason": "Selecting an extra carbon must fail."
+    },
+    {
+      "id": "grade-41",
+      "questionId": "q104",
+      "response": [
+        "carbonyl-double"
+      ],
+      "expectedOutcome": "incorrect",
+      "reason": "C=O does not make the carbon chain unsaturated."
+    },
+    {
+      "id": "grade-42",
+      "questionId": "q104",
+      "response": [
+        "chain-double"
+      ],
+      "expectedOutcome": "correct",
+      "reason": "The carbon–carbon double bond is the relevant one."
+    },
+    {
+      "id": "grade-43",
+      "questionId": "q114",
+      "response": [
+        "heads"
+      ],
+      "expectedOutcome": "correct",
+      "reason": "The water-facing ionic heads are selected."
+    },
+    {
+      "id": "grade-44",
+      "questionId": "q114",
+      "response": [
+        "tails"
+      ],
+      "expectedOutcome": "incorrect",
+      "reason": "The oil-facing tails are not the heads."
+    },
+    {
+      "id": "grade-45",
+      "questionId": "q022",
+      "response": [
+        "i0",
+        "i1",
+        "i2"
+      ],
+      "expectedOutcome": "correct",
+      "reason": "All stable IDs match the authored key, independent of initial item order."
+    },
+    {
+      "id": "grade-46",
+      "questionId": "q043",
+      "response": {
+        "i0": "nonpolar",
+        "i1": "polar",
+        "i2": "polar",
+        "i3": "ionic"
+      },
+      "expectedOutcome": "correct",
+      "reason": "All stable IDs match the authored key, independent of initial item order."
+    },
+    {
+      "id": "grade-47",
+      "questionId": "q055",
+      "response": {
+        "i0": "bent",
+        "i1": "linear",
+        "i2": "tetra",
+        "i3": "pyramid"
+      },
+      "expectedOutcome": "correct",
+      "reason": "All stable IDs match the authored key, independent of initial item order."
+    },
+    {
+      "id": "grade-48",
+      "questionId": "q103",
+      "response": {
+        "i0": "sat",
+        "i1": "mono",
+        "i2": "poly",
+        "i3": "poly"
+      },
+      "expectedOutcome": "correct",
+      "reason": "All stable IDs match the authored key, independent of initial item order."
+    },
+    {
+      "id": "grade-49",
+      "questionId": "q043",
+      "response": {
+        "i0": "nonpolar",
+        "i1": "polar",
+        "i2": "ionic",
+        "i3": "ionic"
+      },
+      "expectedOutcome": "incorrect",
+      "reason": "Exactly 1.7 stays in the labelled polar category of this approximate classroom model."
+    }
+  ],
+  "behaviorCases": [
+    {
+      "id": "evidence-01",
+      "area": "mastery",
+      "given": "A new skill has no evidence.",
+      "when": "Finalize one correct, unassisted first attempt.",
+      "then": "State is Øver, not Kan det nå. First-review level is 1 and dueAt is exactly 24 hours after the encounter."
+    },
+    {
+      "id": "evidence-02",
+      "area": "mastery",
+      "given": "Three eligible successes for atom.parts are q001 choice, q002 recall and q003 categorize.",
+      "when": "Finalize the third without any help.",
+      "then": "State is Kan det nå. The distinct-ID, distinct-kind and non-choice requirements are satisfied."
+    },
+    {
+      "id": "evidence-03",
+      "area": "mastery",
+      "given": "The same question is submitted three times with no intervening distinct completed questions and less than 24 hours elapsed.",
+      "when": "Try to claim three independent pieces of mastery evidence.",
+      "then": "Only the initial eligible encounter can advance the evidence. The repeats cannot grant Kan det nå or advance reviewLevel."
+    },
+    {
+      "id": "evidence-04",
+      "area": "mastery",
+      "given": "Three eligible successes all use choice interactions.",
+      "when": "Evaluate current evidence.",
+      "then": "State stays Øver because non-choice and two-kind requirements are not met."
+    },
+    {
+      "id": "evidence-05",
+      "area": "mastery",
+      "given": "Two eligible clean successes exist. The next response is wrong and a retry succeeds.",
+      "when": "Finalize the encounter.",
+      "then": "It is assisted, not independent. Reset the current clean run and status to Øver; level 0, due in 10 minutes."
+    },
+    {
+      "id": "evidence-06",
+      "area": "mastery",
+      "given": "A learner opens a hint, answer-bearing lesson, target skeleton, molecular formula aid or auto-fill-H before submitting.",
+      "when": "Submit the correct structure or answer.",
+      "then": "The encounter cannot count as an independent success. A lesson read before a fresh encounter does not disqualify all future work."
+    },
+    {
+      "id": "evidence-07",
+      "area": "mastery",
+      "given": "Two clean successes exist and the learner explicitly reveals or selects Vet ikke.",
+      "when": "Finalize once.",
+      "then": "Reset clean evidence and schedule one repair. Revealing alone gives zero completion points."
+    },
+    {
+      "id": "evidence-08",
+      "area": "mastery",
+      "given": "A first incorrect submission is recorded.",
+      "when": "Reload and answer correctly in the resumed encounter.",
+      "then": "The original first-response result and help flags survive. It remains assisted."
+    },
+    {
+      "id": "evidence-09",
+      "area": "mastery",
+      "given": "The current clean run meets three-success and diversity requirements. A later eligible success occurs 23 hours 59 minutes after the preceding clean success for this skill.",
+      "when": "Evaluate delayed recall.",
+      "then": "Do not newly grant Husket senere."
+    },
+    {
+      "id": "evidence-10",
+      "area": "mastery",
+      "given": "The current clean run meets three-success and diversity requirements. The next eligible success occurs exactly 24 hours after the preceding clean success for this skill.",
+      "when": "Evaluate delayed recall.",
+      "then": "Grant Husket senere as evidence of one delayed recall, not a guarantee of permanent memory."
+    },
+    {
+      "id": "evidence-11",
+      "area": "mastery",
+      "given": "Two correct responses happen at 23:59 and 00:01 on adjacent dates.",
+      "when": "Evaluate elapsed time using timestamps.",
+      "then": "A calendar-date change alone does not count as 24-hour delayed recall."
+    },
+    {
+      "id": "evidence-12",
+      "area": "mastery",
+      "given": "Husket senere was achieved historically, followed by a failed encounter.",
+      "when": "Complete three eligible successes in the following 10 minutes.",
+      "then": "The historical badge remains historical; current status can be Kan det nå but not Husket senere based only on old delayed evidence."
+    },
+    {
+      "id": "evidence-13",
+      "area": "mastery",
+      "given": "A correct checked methane build has primarySkillId carbon.valence and other related skill IDs.",
+      "when": "Finalize independently.",
+      "then": "Add evidence to carbon.valence only. Related links do not grant carbon.families mastery automatically."
+    },
+    {
+      "id": "evidence-14",
+      "area": "mastery",
+      "given": "A teacher response contains all rubric words, or arbitrary unrelated prose.",
+      "when": "Open self-assessment and compare with the model answer.",
+      "then": "Label Egenvurdert. Do not create independent mastery evidence or fabricate semantic correctness."
+    },
+    {
+      "id": "evidence-15",
+      "area": "mastery",
+      "given": "A completed encounter ID already appears in stored state.",
+      "when": "Replay its finalize event after a refresh or double click.",
+      "then": "No duplicate points, evidence, collection event or review advancement."
+    },
+    {
+      "id": "evidence-16",
+      "area": "mastery",
+      "given": "q001 was previously presented. q002 and q003, two distinct other IDs, have since been finalized.",
+      "when": "Present q001 again.",
+      "then": "It may supply fresh evidence; repeating q002 twice would not satisfy the two-distinct-IDs requirement."
+    },
+    {
+      "id": "schedule-01",
+      "area": "review",
+      "given": "Skill is level 2, due at 2026-09-20T10:00:00Z.",
+      "when": "Finalize an independent success at 2026-09-19T10:00:00Z.",
+      "then": "Keep level 2 and the exact existing dueAt. Eligible early practice may add evidence, never postpone the due date."
+    },
+    {
+      "id": "schedule-02",
+      "area": "review",
+      "given": "Skill is level 2 and due at 2026-09-20T10:00:00Z.",
+      "when": "Finalize an eligible independent success exactly at that instant.",
+      "then": "Advance to level 3 and schedule the next review seven elapsed days later."
+    },
+    {
+      "id": "schedule-03",
+      "area": "review",
+      "given": "Skill is level 5 and due.",
+      "when": "Finalize an eligible independent success.",
+      "then": "Stay at level 5 and schedule 30 elapsed days later."
+    },
+    {
+      "id": "schedule-04",
+      "area": "review",
+      "given": "Wrong encounter finalized at 2026-09-17T10:00:00Z.",
+      "when": "Inspect the repair and review state.",
+      "then": "One repair ticket exists, level is 0 and dueAt is 2026-09-17T10:10:00Z."
+    },
+    {
+      "id": "schedule-05",
+      "area": "review",
+      "given": "The previous scenario applies; two other distinct IDs are completed and an independent different-question repair succeeds at 10:03.",
+      "when": "Finalize the early repair.",
+      "then": "It may add clean evidence, but level remains 0 and dueAt remains 10:10. Do not move the due date to tomorrow yet."
+    },
+    {
+      "id": "schedule-06",
+      "area": "review",
+      "given": "Skill is level 0, due at 10:10.",
+      "when": "An eligible independent review succeeds at 10:10.",
+      "then": "Advance to level 1, due 24 hours later."
+    },
+    {
+      "id": "schedule-07",
+      "area": "review",
+      "given": "A skill already has a repair ticket.",
+      "when": "Finalize another difficult encounter for that skill.",
+      "then": "Update its ticket and dueAt, without creating multiple copies for the same repair."
+    },
+    {
+      "id": "schedule-08",
+      "area": "review",
+      "given": "A repair is pending after the final slot of a session.",
+      "when": "Begin another session and finish two distinct other tasks after the failure.",
+      "then": "The pending repair becomes eligible across the session boundary; it is not stranded by an obsolete session ID."
+    },
+    {
+      "id": "schedule-09",
+      "area": "selection",
+      "given": "Selected session budget is 8 and multiple tasks are missed.",
+      "when": "Continue to the end.",
+      "then": "Exactly 8 primary task slots including repairs are consumed. Retries and micro-lessons do not consume slots. Carry unfinished repairs forward."
+    },
+    {
+      "id": "schedule-10",
+      "area": "selection",
+      "given": "Only a single question is eligible in a filtered pool and it was just completed.",
+      "when": "Request another task before spacing is possible.",
+      "then": "Offer another topic or a completed short round instead of immediately repeating for fake mastery."
+    },
+    {
+      "id": "schedule-11",
+      "area": "selection",
+      "given": "All queues are populated and deterministic clock and seed are fixed.",
+      "when": "Select a session twice from identical input state.",
+      "then": "Produce identical initial selection and per-encounter shuffle, roughly honoring the stated priorities without claiming statistical optimality."
+    },
+    {
+      "id": "schedule-12",
+      "area": "selection",
+      "given": "Due and fragile pools are empty.",
+      "when": "Start an ordinary session.",
+      "then": "Fill from eligible new content and prerequisite recommendations; do not produce empty placeholder questions."
+    },
+    {
+      "id": "schedule-13",
+      "area": "selection",
+      "given": "A user manually opens a later module.",
+      "when": "Start its practice.",
+      "then": "Do not hard-lock it because prerequisite modules lack mastery."
+    },
+    {
+      "id": "storage-01",
+      "area": "persistence",
+      "given": "A session has a typed response, shuffled items and a partially drawn molecule.",
+      "when": "Persist and reload.",
+      "then": "Restore the exact encounter, drafts, shuffle and assistance flags, not a freshly credited attempt."
+    },
+    {
+      "id": "storage-02",
+      "area": "persistence",
+      "given": "The browser denies localStorage or throws a quota error.",
+      "when": "Try a progress-changing action.",
+      "then": "Continue in memory, show the honest save-failure notice and allow JSON export. Never claim Lagret."
+    },
+    {
+      "id": "storage-03",
+      "area": "persistence",
+      "given": "Current progress is valid. An import contains a future schema or an unknown question ID.",
+      "when": "Attempt import.",
+      "then": "Reject safely without deleting or partially replacing current progress."
+    },
+    {
+      "id": "storage-04",
+      "area": "persistence",
+      "given": "A valid export is available.",
+      "when": "Import it into an empty browser context.",
+      "then": "Preview replacement, require confirmation, then restore valid data and reject unsafe or non-finite values."
+    },
+    {
+      "id": "storage-05",
+      "area": "persistence",
+      "given": "Imported text contains HTML/script-like content.",
+      "when": "Display it in a teacher response field.",
+      "then": "Treat it as literal text. Do not execute or inject HTML."
+    },
+    {
+      "id": "storage-06",
+      "area": "persistence",
+      "given": "The current storage record is malformed and a valid last-known-good backup exists.",
+      "when": "Load the app.",
+      "then": "Recover the validated backup with an honest notice; retain corrupted data safely for export or diagnosis rather than crashing."
+    },
+    {
+      "id": "storage-07",
+      "area": "persistence",
+      "given": "The same app is opened on another origin or browser.",
+      "when": "Inspect progress.",
+      "then": "Do not imply that earlier local progress was synced; provide explicit import instructions."
+    },
+    {
+      "id": "ui-01",
+      "area": "interface",
+      "given": "A wrong answer is submitted for any renderer.",
+      "when": "Inspect the visual page, accessible tree and DOM-visible solution region.",
+      "then": "Show retry guidance, not the correct answer or hidden-screen-reader solution. Reveal is an explicit action."
+    },
+    {
+      "id": "ui-02",
+      "area": "interface",
+      "given": "A select_parts, categorize, order or builder challenge is open.",
+      "when": "Complete it using keyboard only, then touch/click alternatives without dragging.",
+      "then": "All necessary controls are reachable with visible focus and meaningful labels."
+    },
+    {
+      "id": "ui-03",
+      "area": "interface",
+      "given": "The first-20-element table is open at 375 pixels wide.",
+      "when": "Inspect positions and navigate to helium and calcium.",
+      "then": "Keep real group positions and appropriate gaps, readable labels and deliberate scrolling. Do not collapse the actual group structure."
+    },
+    {
+      "id": "ui-04",
+      "area": "interface",
+      "given": "Reduced motion is enabled.",
+      "when": "Move an electron, finish a molecule and switch screens.",
+      "then": "Do not spin, bounce or require motion to convey the result."
+    },
+    {
+      "id": "ui-05",
+      "area": "interface",
+      "given": "A miniprøve has started with 20 questions, two per module.",
+      "when": "Submit the test, then request an explanation.",
+      "then": "Hold grading until submission, then show real results without an invented grade. Hint access before submission offers an explicit switch to practice."
+    },
+    {
+      "id": "ui-06",
+      "area": "interface",
+      "given": "A learner skips the optional initial check.",
+      "when": "Choose Start fra begynnelsen.",
+      "then": "Enter real course content without a mandatory diagnostic or account."
+    },
+    {
+      "id": "ui-07",
+      "area": "interface",
+      "given": "q016 is open.",
+      "when": "Use its declared first20 reference table.",
+      "then": "This is permitted question stimulus and does not set a help flag. Opening an undeclared answer-bearing lesson does."
+    },
+    {
+      "id": "ui-08",
+      "area": "interface",
+      "given": "App is loaded with all its static assets and no network is available.",
+      "when": "Use core sessions, lessons and labs.",
+      "then": "Core content does not call a remote API. Do not claim offline reload unless an offline cache is separately implemented and tested."
+    },
+    {
+      "id": "ui-09",
+      "area": "interface",
+      "given": "Source links for N5 and N8 are shown.",
+      "when": "Read the source disclosure.",
+      "then": "Do not claim the original H5P exercise bank was imported or inspected."
+    },
+    {
+      "id": "ui-10",
+      "area": "interface",
+      "given": "A molecule is completed with help.",
+      "when": "Open the collection, then build it independently in a later encounter.",
+      "then": "First completion unlocks the item with assistance recorded. Later independent completion adds its separate marker without falsely certifying long-term memory."
+    },
+    {
+      "id": "ui-11",
+      "area": "interface",
+      "given": "The same task or target was completed earlier in this session.",
+      "when": "Complete it again.",
+      "then": "Do not award duplicate session points, even when further practice is allowed."
+    },
+    {
+      "id": "ui-12",
+      "area": "interface",
+      "given": "A current skill state has changed after an error.",
+      "when": "Inspect Start and Fremgang.",
+      "then": "Both use the same underlying current state and show historical accomplishments separately."
+    }
+  ],
+  "moleculeCases": [
+    {
+      "id": "graph-valid-methane",
+      "targetId": "methane",
+      "candidate": {
+        "copyExpandedGraphOf": "methane"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-ethane",
+      "targetId": "ethane",
+      "candidate": {
+        "copyExpandedGraphOf": "ethane"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-ethene",
+      "targetId": "ethene",
+      "candidate": {
+        "copyExpandedGraphOf": "ethene"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-ethyne",
+      "targetId": "ethyne",
+      "candidate": {
+        "copyExpandedGraphOf": "ethyne"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-propane",
+      "targetId": "propane",
+      "candidate": {
+        "copyExpandedGraphOf": "propane"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-ethanol",
+      "targetId": "ethanol",
+      "candidate": {
+        "copyExpandedGraphOf": "ethanol"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-propan-1-ol",
+      "targetId": "propan-1-ol",
+      "candidate": {
+        "copyExpandedGraphOf": "propan-1-ol"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-methanoic-acid",
+      "targetId": "methanoic-acid",
+      "candidate": {
+        "copyExpandedGraphOf": "methanoic-acid"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-ethanoic-acid",
+      "targetId": "ethanoic-acid",
+      "candidate": {
+        "copyExpandedGraphOf": "ethanoic-acid"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-butane",
+      "targetId": "butane",
+      "candidate": {
+        "copyExpandedGraphOf": "butane"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-isobutane",
+      "targetId": "isobutane",
+      "candidate": {
+        "copyExpandedGraphOf": "isobutane"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-valid-pentane",
+      "targetId": "pentane",
+      "candidate": {
+        "copyExpandedGraphOf": "pentane"
+      },
+      "expected": "Correct neutral connected target."
+    },
+    {
+      "id": "graph-labels",
+      "targetId": "ethanol",
+      "candidate": {
+        "copyExpandedGraphOf": "ethanol",
+        "transforms": [
+          "rename every atom ID consistently",
+          "reverse atom and bond array order",
+          "change all drawing coordinates"
+        ]
+      },
+      "expected": "Still correct; IDs and drawing orientation are not chemical identity."
+    },
+    {
+      "id": "graph-isomer",
+      "targetId": "butane",
+      "candidate": {
+        "copyExpandedGraphOf": "isobutane"
+      },
+      "expected": "Valid structure, wrong requested isomer. Do not call it chemically impossible."
+    },
+    {
+      "id": "graph-missing-h",
+      "targetId": "methane",
+      "candidate": {
+        "copyExpandedGraphOf": "methane",
+        "removeAtomIds": [
+          "h-c1-4"
+        ],
+        "removeIncidentBonds": true
+      },
+      "expected": "Incomplete target; no success or independent collection credit."
+    },
+    {
+      "id": "graph-extra-h",
+      "targetId": "methane",
+      "candidate": {
+        "copyExpandedGraphOf": "methane",
+        "addAtom": {
+          "id": "extra-h",
+          "element": "H"
+        },
+        "addBond": {
+          "a": "c1",
+          "b": "extra-h",
+          "order": 1
+        }
+      },
+      "expected": "Invalid carbon valence, even if most of the shape looks right."
+    },
+    {
+      "id": "graph-disconnected",
+      "targetId": "ethane",
+      "candidate": {
+        "copyExpandedGraphOf": "methane",
+        "appendDisconnectedCopyOf": "methane"
+      },
+      "expected": "Not a connected target molecule. Formula similarity is not sufficient."
+    },
+    {
+      "id": "graph-loop",
+      "targetId": "water",
+      "candidate": {
+        "copyExpandedGraphOf": "water",
+        "addBond": {
+          "a": "o1",
+          "b": "o1",
+          "order": 1
+        }
+      },
+      "expected": "Reject self-loop before graph matching."
+    },
+    {
+      "id": "graph-duplicate-edge",
+      "targetId": "ethene",
+      "candidate": {
+        "copyExpandedGraphOf": "ethene",
+        "duplicateFirstBond": true
+      },
+      "expected": "Reject duplicate edges; bond order must be represented in the existing edge."
+    },
+    {
+      "id": "graph-wrong-order",
+      "targetId": "ethene",
+      "candidate": {
+        "copyExpandedGraphOf": "ethene",
+        "setBondOrderBetween": [
+          "c1",
+          "c2",
+          1
+        ]
+      },
+      "expected": "Wrong bond order and incomplete valence; do not match by atom counts alone."
+    },
+    {
+      "id": "graph-autohelp",
+      "targetId": "propane",
+      "candidate": {
+        "copyExpandedGraphOf": "propane",
+        "helpUsed": [
+          "autoFillHydrogens"
+        ]
+      },
+      "expected": "Structure is correct, but the completed encounter is assisted."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "diagrams": [
+    {
+      "id": "ethene-heavy",
+      "renderer": "molecule",
+      "moleculeId": "ethene",
+      "showHydrogens": false,
+      "geometryPurpose": "Connectivity only; do not treat this 2D drawing as molecular geometry.",
+      "selectableParts": "none"
+    },
+    {
+      "id": "propane-heavy",
+      "renderer": "molecule",
+      "moleculeId": "propane",
+      "showHydrogens": false,
+      "geometryPurpose": "Connectivity only; do not treat this 2D drawing as molecular geometry.",
+      "selectableParts": "none"
+    },
+    {
+      "id": "butane-full",
+      "renderer": "molecule",
+      "moleculeId": "butane",
+      "showHydrogens": true,
+      "geometryPurpose": "Connectivity only; do not treat this 2D drawing as molecular geometry.",
+      "selectableParts": "atom IDs from expandedGraph"
+    },
+    {
+      "id": "isobutane-full",
+      "renderer": "molecule",
+      "moleculeId": "isobutane",
+      "showHydrogens": true,
+      "geometryPurpose": "Connectivity only; do not treat this 2D drawing as molecular geometry.",
+      "selectableParts": "atom IDs from expandedGraph"
+    },
+    {
+      "id": "ethanol-full",
+      "renderer": "molecule",
+      "moleculeId": "ethanol",
+      "showHydrogens": true,
+      "geometryPurpose": "Connectivity only; do not treat this 2D drawing as molecular geometry.",
+      "selectableParts": "atom IDs from expandedGraph"
+    },
+    {
+      "id": "ethanoic-acid-full",
+      "renderer": "molecule",
+      "moleculeId": "ethanoic-acid",
+      "showHydrogens": true,
+      "geometryPurpose": "Connectivity only; do not treat this 2D drawing as molecular geometry.",
+      "selectableParts": "atom IDs from expandedGraph"
+    },
+    {
+      "id": "fatty-acid-unsaturated",
+      "renderer": "fatty-acid-schematic",
+      "description": "Draw a neutral fatty acid with a COOH end on the left and a long chain to the right. Show exactly one C=O at the head and one cis C=C in the chain; label both connected atom types. Keep the remaining long chain visibly abbreviated with an ellipsis, not an invented full formula.",
+      "selectableParts": [
+        "carbonyl-double",
+        "chain-double"
+      ],
+      "accessibleDescription": "Én dobbeltbinding går mellom karbon og oksygen i syregruppen. En annen går mellom to karbonatomer i kjeden. Velg en av dem."
+    },
+    {
+      "id": "soap-micelle",
+      "renderer": "micelle-schematic",
+      "description": "Draw water outside a circle and an oil core inside. Place an outer ring of ionic COO− heads with hydrocarbon tails pointing inward. Clearly label water and oil, but do not label the correct region as the answer. The two accessible selectable regions are heads and tails. Show the neutral fatty-acid group nowhere on the soap heads.",
+      "selectableParts": [
+        "heads",
+        "tails"
+      ],
+      "accessibleDescription": "En modell har et ytre område med ladde hoder ved vannet og et indre område med kjeder ved oljen. Velg området oppgaven ber om."
+    }
+  ]
+}

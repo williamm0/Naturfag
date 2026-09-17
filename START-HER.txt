@@ -1,0 +1,45 @@
+KJEMILAB 1.1 · MED PUGGING PÅ PERIODESYSTEMET
+
+Pakk ut ZIP-filen. Åpne mappen Kjemilab og dobbeltklikk index.html.
+Nettstedet er ferdig bygd. Du trenger ikke installasjon, terminal, Codex eller konto.
+
+Velg «Periodesystemet» i menyen. På mobil heter knappen nederst «Pugg».
+
+«Utforsk tabellen» viser de 20 første grunnstoffene. Trykk på et grunnstoff,
+et gruppenummer eller et periodenummer. På smale skjermer kan tabellen sveipes
+sidelengs. Den er et utsnitt, ikke hele periodesystemet.
+
+Under «Pugg» kan dere velge de 10 første, de 20 første eller et eget utvalg.
+Ta en blandet runde eller øv på navn og symboler, grupper og perioder,
+atomer og elektroner, ioner og ladning, eller størrelse og elektronegativitet.
+Dere får hint før fasiten. Oppgaver som trenger støtte kommer tilbake etter
+andre oppgaver eller blir klare for en ny runde senere.
+
+«Forklar sammen» har 12 muntlige øvingsspørsmål. Velg 1–4 deltakere og bytt
+på å forklare. Sjekkliste og eksempelsvar åpnes når dere selv velger det.
+Dette er egenvurdering, ikke en automatisk karakter.
+
+De 20 første grunnstoffene er et valgt øvingsutvalg. Prosjektarket sier ikke
+at akkurat disse 20, eller alle 118, må læres utenat. De muntlige spørsmålene
+er laget for øving, ikke hentet fra lærerens konkrete muntlige spørsmål.
+
+De opprinnelige leksjonene, 120 spørsmålene og laboratoriene er fortsatt med.
+
+TA VARE PÅ GAMMEL FREMGANG
+Før du bytter fra forrige versjon, åpne den gamle nettsiden og velg
+Innstillinger, deretter «Eksporter fremgang».
+Åpne den nye index.html, gå til Innstillinger og importer sikkerhetskopien.
+Import erstatter fremgangen etter bekreftelse. Gamle sikkerhetskopier støttes.
+En flyttet eller omdøpt HTML-fil kan få en annen lokal lagringsplass.
+
+Fremgangen lagres lokalt når nettleseren tillater det, ikke i en nettsky.
+Deler dere en nettleser, blir fremgangen felles. Eksporter regelmessig.
+Privat nettlesing eller sletting av nettleserdata kan fjerne fremgangen.
+Nettsiden varsler dersom lagring ikke er tilgjengelig.
+
+Selve index.html har alt læringsinnhold og all programkode innebygd.
+Bare kildelenkene trenger internett. De andre filene er kildekode og dokumentasjon.
+
+Testet i Chromium ved direkte innlasting av HTML-innholdet. Testmiljøet blokkerte
+vanlig åpning av lokale filer, så ekte dobbeltklikkstart, lokal fillagring og Safari
+er ikke bekreftet der. Se docs/VERIFICATION.md for testmetode og begrensninger.

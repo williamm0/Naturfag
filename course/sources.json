@@ -1,0 +1,218 @@
+[
+  {
+    "id": "F1",
+    "title": "Atommodellen og periodesystemet",
+    "kind": "uploaded_slides",
+    "location": "Atommodellen og periodesystemet.pptx",
+    "purpose": "Course scope, shell model, groups, periods, ions, trends. See correction log and slide 7 classroom EN table.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "F2",
+    "title": "Sterke og svake bindinger",
+    "kind": "uploaded_slides",
+    "location": "Sterke og svake bindinger.pptx",
+    "purpose": "Course terminology, covalent/ionic/metallic bonds, molecular forces. See correction log.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "F3",
+    "title": "Hydrokarboner, alkoholer og fettsyrer",
+    "kind": "uploaded_slides",
+    "location": "Hydrokarboner Alkoholer Fettsyrer.pptx",
+    "purpose": "Course scope and everyday examples. Embedded structures inspected, including the triglyceride on slide 5.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "F4",
+    "title": "Oppsummeringsspørsmål: Hydrokarboner, alkoholer og fettsyrer",
+    "kind": "uploaded_worksheet",
+    "location": "Hydrokarboner alkoholer fettsyrer oppsummeringsspørsmål.docx",
+    "purpose": "All 7 simple questions, 5 explanation questions and the final soap reflection are represented in teacher-tasks.json.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "F5",
+    "title": "Molekylbygging: Karbonforbindelser",
+    "kind": "uploaded_worksheet",
+    "location": "molekylbygging karbonforbindelser.docx",
+    "purpose": "All 13 requested names represented by 12 unique molecule targets; seven reflections preserved.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "N1",
+    "title": "Periodesystemet",
+    "kind": "ndla",
+    "location": "https://ndla.no/nb/r/naturfag-sf/periodesystemet/70bfc30a4a",
+    "purpose": "Main Norwegian reference. Original wording and diagrams are not reproduced.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "N2",
+    "title": "Elektronparbinding",
+    "kind": "ndla",
+    "location": "https://ndla.no/nb/r/naturfag-sf/elektronparbinding/ffa782abcb",
+    "purpose": "Main Norwegian reference. Original wording and diagrams are not reproduced.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "N3",
+    "title": "Ionebinding",
+    "kind": "ndla",
+    "location": "https://ndla.no/nb/r/naturfag-sf/ionebinding/fc12e431c4",
+    "purpose": "Main Norwegian reference. Original wording and diagrams are not reproduced.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "N4",
+    "title": "Metallbinding",
+    "kind": "ndla",
+    "location": "https://ndla.no/nb/r/naturfag-sf/metallbinding/e2240e2b90",
+    "purpose": "Main Norwegian reference. Original wording and diagrams are not reproduced.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "N5",
+    "title": "Oppsummeringsoppgaver om bindinger",
+    "kind": "ndla",
+    "location": "https://ndla.no/nb/r/naturfag-sf/oppsummeringsoppgaver-om-bindinger/d8cf1c3cbf",
+    "purpose": "Public article and learning goal inspected; embedded H5P question payload was inaccessible. Link to original practice; do not claim to reproduce its question bank.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "N6",
+    "title": "Hydrogenbindinger",
+    "kind": "ndla",
+    "location": "https://ndla.no/nb/r/naturfag-sf/hydrogenbindinger/d8d3e260dd",
+    "purpose": "Main Norwegian reference. Original wording and diagrams are not reproduced.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "N7",
+    "title": "Kokepunkter og krefter mellom molekyler",
+    "kind": "ndla",
+    "location": "https://ndla.no/nb/r/naturfag-sf/kokepunkter-og-krefter-mellom-molekyler/f83b2eb199",
+    "purpose": "Public text inspected, including molecular attractions and boiling. Embedded simulations not executed. See clarification log.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "N8",
+    "title": "Er molekylene polare?",
+    "kind": "ndla",
+    "location": "https://ndla.no/nb/r/naturfag-sf/er-molekylene-polare/dccba9ecae",
+    "purpose": "Public article and learning goal inspected; embedded H5P question payload was inaccessible. Link to original practice; do not claim to reproduce its question bank.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "O1",
+    "title": "OpenStax: Atomic Structure and Symbolism",
+    "kind": "supplement",
+    "location": "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism",
+    "purpose": "Clarifies neutral atoms, ions and model limitations.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "O2",
+    "title": "OpenStax: Periodic Variations in Element Properties",
+    "kind": "supplement",
+    "location": "https://openstax.org/books/chemistry-2e/pages/6-5-periodic-variations-in-element-properties",
+    "purpose": "Checks group/period directions and atomic-size trends.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "O3",
+    "title": "OpenStax: Covalent Bonding",
+    "kind": "supplement",
+    "location": "https://openstax.org/books/chemistry-2e/pages/7-2-covalent-bonding",
+    "purpose": "Checks electronegativity, partial charges and approximate threshold caveats.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "O4",
+    "title": "OpenStax: Intermolecular Forces",
+    "kind": "supplement",
+    "location": "https://openstax.org/books/chemistry-2e/pages/10-1-intermolecular-forces",
+    "purpose": "Checks dispersion, dipole interactions, hydrogen bonding and phase changes.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "O5",
+    "title": "OpenStax: Molecular Structure and Polarity",
+    "kind": "supplement",
+    "location": "https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity",
+    "purpose": "Checks molecular geometry and cancellation of bond dipoles.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "O6",
+    "title": "OpenStax: Hydrocarbons",
+    "kind": "supplement",
+    "location": "https://openstax.org/books/chemistry-2e/pages/20-1-hydrocarbons",
+    "purpose": "Checks the specified structures, isobutane alias and restricted alkane formula.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "O7",
+    "title": "OpenStax: Alcohols and Ethers",
+    "kind": "supplement",
+    "location": "https://openstax.org/books/chemistry-2e/pages/20-2-alcohols-and-ethers",
+    "purpose": "Checks alcohol groups, covalent OH versus hydroxide, and chain-length qualifications.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "O8",
+    "title": "OpenStax: Aldehydes, Ketones, Carboxylic Acids, and Esters",
+    "kind": "supplement",
+    "location": "https://openstax.org/books/chemistry-2e/pages/20-3-aldehydes-ketones-carboxylic-acids-and-esters",
+    "purpose": "Checks COOH structures and distinction from alcohols. Other chapter topics are out of scope.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "O9",
+    "title": "OpenStax: Waxes, Fats, and Oils",
+    "kind": "supplement",
+    "location": "https://openstax.org/books/organic-chemistry/pages/27-1-waxes-fats-and-oils",
+    "purpose": "Supplement for fatty-acid packing and triglyceride versus free fatty-acid distinction. No nutrition claims.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "O10",
+    "title": "OpenStax: Soap",
+    "kind": "supplement",
+    "location": "https://openstax.org/books/organic-chemistry/pages/27-2-soap",
+    "purpose": "Supplement needed to explain the final teacher question: ionic head, hydrocarbon tail and micelles.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "T1",
+    "title": "React Quick Start",
+    "kind": "technical",
+    "location": "https://react.dev/learn",
+    "purpose": "Implementation documentation, not a chemistry source.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "T2",
+    "title": "Vite Getting Started",
+    "kind": "technical",
+    "location": "https://vite.dev/guide/",
+    "purpose": "Check compatible stable versions and actual Node requirements during implementation.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "T3",
+    "title": "MDN localStorage",
+    "kind": "technical",
+    "location": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+    "purpose": "Browser-origin persistence and possible storage failures. No cross-device sync promise.",
+    "checkedOn": "2026-09-17"
+  },
+  {
+    "id": "F6",
+    "title": "Prosjekt om kjemiske bindinger: plakat og samtale",
+    "kind": "uploaded_worksheet",
+    "location": "Prosjekt om kjemisk bindinger.docx",
+    "purpose": "Valgbart tema periodesystemet; sammenheng mellom bindinger og egenskaper; presise fagbegrep, teori og oppfølgingsspørsmål. Ingen fast liste over grunnstoffer som skal pugges.",
+    "checkedOn": "2026-09-17"
+  }
+]

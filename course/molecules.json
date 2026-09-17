@@ -1,0 +1,2039 @@
+{
+  "schemaVersion": 1,
+  "neutralValences": {
+    "H": 1,
+    "C": 4,
+    "O": 2,
+    "N": 3,
+    "Cl": 1,
+    "F": 1
+  },
+  "molecules": [
+    {
+      "id": "methane",
+      "name": "metan",
+      "aliases": [],
+      "formula": "CH4",
+      "condensedFormula": "CH4",
+      "geometry": "tetrahedral",
+      "buildTarget": true,
+      "skillIds": [
+        "carbon.valence",
+        "carbon.families"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O6"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 4
+          }
+        ],
+        "bonds": []
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-3",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-4",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-2",
+            "a": "c1",
+            "b": "h-c1-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-3",
+            "a": "c1",
+            "b": "h-c1-3",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-4",
+            "a": "c1",
+            "b": "h-c1-4",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "carbon.valence"
+    },
+    {
+      "id": "ethane",
+      "name": "etan",
+      "aliases": [],
+      "formula": "C2H6",
+      "condensedFormula": "CH3–CH3",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "carbon.valence",
+        "carbon.families"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O6"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 3
+          },
+          {
+            "id": "c2",
+            "element": "C",
+            "hydrogens": 3
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "c2",
+            "element": "C"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-3",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-3",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-c2",
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-2",
+            "a": "c1",
+            "b": "h-c1-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-3",
+            "a": "c1",
+            "b": "h-c1-3",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-1",
+            "a": "c2",
+            "b": "h-c2-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-2",
+            "a": "c2",
+            "b": "h-c2-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-3",
+            "a": "c2",
+            "b": "h-c2-3",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "carbon.valence"
+    },
+    {
+      "id": "ethene",
+      "name": "eten",
+      "aliases": [],
+      "formula": "C2H4",
+      "condensedFormula": "CH2=CH2",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "carbon.valence",
+        "carbon.families"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O6"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 2
+          },
+          {
+            "id": "c2",
+            "element": "C",
+            "hydrogens": 2
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "c2",
+            "order": 2
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "c2",
+            "element": "C"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-2",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-c2",
+            "a": "c1",
+            "b": "c2",
+            "order": 2
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-2",
+            "a": "c1",
+            "b": "h-c1-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-1",
+            "a": "c2",
+            "b": "h-c2-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-2",
+            "a": "c2",
+            "b": "h-c2-2",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "carbon.valence"
+    },
+    {
+      "id": "ethyne",
+      "name": "etyn",
+      "aliases": [],
+      "formula": "C2H2",
+      "condensedFormula": "CH≡CH",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "carbon.valence",
+        "carbon.families"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O6"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 1
+          },
+          {
+            "id": "c2",
+            "element": "C",
+            "hydrogens": 1
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "c2",
+            "order": 3
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "c2",
+            "element": "C"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-1",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-c2",
+            "a": "c1",
+            "b": "c2",
+            "order": 3
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-1",
+            "a": "c2",
+            "b": "h-c2-1",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "carbon.valence"
+    },
+    {
+      "id": "propane",
+      "name": "propan",
+      "aliases": [],
+      "formula": "C3H8",
+      "condensedFormula": "CH3–CH2–CH3",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "carbon.valence",
+        "carbon.families"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O6"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 3
+          },
+          {
+            "id": "c2",
+            "element": "C",
+            "hydrogens": 2
+          },
+          {
+            "id": "c3",
+            "element": "C",
+            "hydrogens": 3
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "a": "c2",
+            "b": "c3",
+            "order": 1
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "c2",
+            "element": "C"
+          },
+          {
+            "id": "c3",
+            "element": "C"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-3",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-3",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-c2",
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-c3",
+            "a": "c2",
+            "b": "c3",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-2",
+            "a": "c1",
+            "b": "h-c1-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-3",
+            "a": "c1",
+            "b": "h-c1-3",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-1",
+            "a": "c2",
+            "b": "h-c2-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-2",
+            "a": "c2",
+            "b": "h-c2-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-1",
+            "a": "c3",
+            "b": "h-c3-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-2",
+            "a": "c3",
+            "b": "h-c3-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-3",
+            "a": "c3",
+            "b": "h-c3-3",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "carbon.valence"
+    },
+    {
+      "id": "ethanol",
+      "name": "etanol",
+      "aliases": [],
+      "formula": "C2H6O",
+      "condensedFormula": "CH3–CH2–OH",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "alcohol.groups",
+        "alcohol.properties"
+      ],
+      "sourceRefs": [
+        "F3",
+        "F5",
+        "O7"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 3
+          },
+          {
+            "id": "c2",
+            "element": "C",
+            "hydrogens": 2
+          },
+          {
+            "id": "o1",
+            "element": "O",
+            "hydrogens": 1
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "a": "c2",
+            "b": "o1",
+            "order": 1
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "c2",
+            "element": "C"
+          },
+          {
+            "id": "o1",
+            "element": "O"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-3",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-2",
+            "element": "H"
+          },
+          {
+            "id": "h-o1-1",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-c2",
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-o1",
+            "a": "c2",
+            "b": "o1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-2",
+            "a": "c1",
+            "b": "h-c1-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-3",
+            "a": "c1",
+            "b": "h-c1-3",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-1",
+            "a": "c2",
+            "b": "h-c2-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-2",
+            "a": "c2",
+            "b": "h-c2-2",
+            "order": 1
+          },
+          {
+            "id": "bond-o1-h-o1-1",
+            "a": "o1",
+            "b": "h-o1-1",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "alcohol.groups"
+    },
+    {
+      "id": "propan-1-ol",
+      "name": "propan-1-ol",
+      "aliases": [
+        "propanol"
+      ],
+      "formula": "C3H8O",
+      "condensedFormula": "CH3–CH2–CH2–OH",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "alcohol.groups",
+        "carbon.valence"
+      ],
+      "sourceRefs": [
+        "F3",
+        "F5",
+        "O7"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 3
+          },
+          {
+            "id": "c2",
+            "element": "C",
+            "hydrogens": 2
+          },
+          {
+            "id": "c3",
+            "element": "C",
+            "hydrogens": 2
+          },
+          {
+            "id": "o1",
+            "element": "O",
+            "hydrogens": 1
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "a": "c2",
+            "b": "c3",
+            "order": 1
+          },
+          {
+            "a": "c3",
+            "b": "o1",
+            "order": 1
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "c2",
+            "element": "C"
+          },
+          {
+            "id": "c3",
+            "element": "C"
+          },
+          {
+            "id": "o1",
+            "element": "O"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-3",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-2",
+            "element": "H"
+          },
+          {
+            "id": "h-o1-1",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-c2",
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-c3",
+            "a": "c2",
+            "b": "c3",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-o1",
+            "a": "c3",
+            "b": "o1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-2",
+            "a": "c1",
+            "b": "h-c1-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-3",
+            "a": "c1",
+            "b": "h-c1-3",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-1",
+            "a": "c2",
+            "b": "h-c2-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-2",
+            "a": "c2",
+            "b": "h-c2-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-1",
+            "a": "c3",
+            "b": "h-c3-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-2",
+            "a": "c3",
+            "b": "h-c3-2",
+            "order": 1
+          },
+          {
+            "id": "bond-o1-h-o1-1",
+            "a": "o1",
+            "b": "h-o1-1",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "alcohol.groups"
+    },
+    {
+      "id": "methanoic-acid",
+      "name": "metansyre",
+      "aliases": [],
+      "formula": "CH2O2",
+      "condensedFormula": "H–C(=O)–OH",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "acid.structures",
+        "carbon.valence"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O8"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 1
+          },
+          {
+            "id": "o1",
+            "element": "O",
+            "hydrogens": 0
+          },
+          {
+            "id": "o2",
+            "element": "O",
+            "hydrogens": 1
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "o1",
+            "order": 2
+          },
+          {
+            "a": "c1",
+            "b": "o2",
+            "order": 1
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "o1",
+            "element": "O"
+          },
+          {
+            "id": "o2",
+            "element": "O"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-o2-1",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-o1",
+            "a": "c1",
+            "b": "o1",
+            "order": 2
+          },
+          {
+            "id": "bond-c1-o2",
+            "a": "c1",
+            "b": "o2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-o2-h-o2-1",
+            "a": "o2",
+            "b": "h-o2-1",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "acid.structures"
+    },
+    {
+      "id": "ethanoic-acid",
+      "name": "etansyre",
+      "aliases": [],
+      "formula": "C2H4O2",
+      "condensedFormula": "CH3–C(=O)–OH",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "acid.structures",
+        "carbon.valence"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O8"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 3
+          },
+          {
+            "id": "c2",
+            "element": "C",
+            "hydrogens": 0
+          },
+          {
+            "id": "o1",
+            "element": "O",
+            "hydrogens": 0
+          },
+          {
+            "id": "o2",
+            "element": "O",
+            "hydrogens": 1
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "a": "c2",
+            "b": "o1",
+            "order": 2
+          },
+          {
+            "a": "c2",
+            "b": "o2",
+            "order": 1
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "c2",
+            "element": "C"
+          },
+          {
+            "id": "o1",
+            "element": "O"
+          },
+          {
+            "id": "o2",
+            "element": "O"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-3",
+            "element": "H"
+          },
+          {
+            "id": "h-o2-1",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-c2",
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-o1",
+            "a": "c2",
+            "b": "o1",
+            "order": 2
+          },
+          {
+            "id": "bond-c2-o2",
+            "a": "c2",
+            "b": "o2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-2",
+            "a": "c1",
+            "b": "h-c1-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-3",
+            "a": "c1",
+            "b": "h-c1-3",
+            "order": 1
+          },
+          {
+            "id": "bond-o2-h-o2-1",
+            "a": "o2",
+            "b": "h-o2-1",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "acid.structures"
+    },
+    {
+      "id": "butane",
+      "name": "butan",
+      "aliases": [],
+      "formula": "C4H10",
+      "condensedFormula": "CH3–CH2–CH2–CH3",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "carbon.isomers",
+        "carbon.valence"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O6"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 3
+          },
+          {
+            "id": "c2",
+            "element": "C",
+            "hydrogens": 2
+          },
+          {
+            "id": "c3",
+            "element": "C",
+            "hydrogens": 2
+          },
+          {
+            "id": "c4",
+            "element": "C",
+            "hydrogens": 3
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "a": "c2",
+            "b": "c3",
+            "order": 1
+          },
+          {
+            "a": "c3",
+            "b": "c4",
+            "order": 1
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "c2",
+            "element": "C"
+          },
+          {
+            "id": "c3",
+            "element": "C"
+          },
+          {
+            "id": "c4",
+            "element": "C"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-3",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c4-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c4-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c4-3",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-c2",
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-c3",
+            "a": "c2",
+            "b": "c3",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-c4",
+            "a": "c3",
+            "b": "c4",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-2",
+            "a": "c1",
+            "b": "h-c1-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-3",
+            "a": "c1",
+            "b": "h-c1-3",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-1",
+            "a": "c2",
+            "b": "h-c2-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-2",
+            "a": "c2",
+            "b": "h-c2-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-1",
+            "a": "c3",
+            "b": "h-c3-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-2",
+            "a": "c3",
+            "b": "h-c3-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c4-h-c4-1",
+            "a": "c4",
+            "b": "h-c4-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c4-h-c4-2",
+            "a": "c4",
+            "b": "h-c4-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c4-h-c4-3",
+            "a": "c4",
+            "b": "h-c4-3",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "carbon.isomers"
+    },
+    {
+      "id": "isobutane",
+      "name": "2-metylpropan",
+      "aliases": [
+        "isobutan"
+      ],
+      "formula": "C4H10",
+      "condensedFormula": "CH3–CH(CH3)–CH3",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "carbon.isomers",
+        "carbon.valence"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O6"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 1
+          },
+          {
+            "id": "c2",
+            "element": "C",
+            "hydrogens": 3
+          },
+          {
+            "id": "c3",
+            "element": "C",
+            "hydrogens": 3
+          },
+          {
+            "id": "c4",
+            "element": "C",
+            "hydrogens": 3
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "a": "c1",
+            "b": "c3",
+            "order": 1
+          },
+          {
+            "a": "c1",
+            "b": "c4",
+            "order": 1
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "c2",
+            "element": "C"
+          },
+          {
+            "id": "c3",
+            "element": "C"
+          },
+          {
+            "id": "c4",
+            "element": "C"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-3",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-3",
+            "element": "H"
+          },
+          {
+            "id": "h-c4-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c4-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c4-3",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-c2",
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-c3",
+            "a": "c1",
+            "b": "c3",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-c4",
+            "a": "c1",
+            "b": "c4",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-1",
+            "a": "c2",
+            "b": "h-c2-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-2",
+            "a": "c2",
+            "b": "h-c2-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-3",
+            "a": "c2",
+            "b": "h-c2-3",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-1",
+            "a": "c3",
+            "b": "h-c3-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-2",
+            "a": "c3",
+            "b": "h-c3-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-3",
+            "a": "c3",
+            "b": "h-c3-3",
+            "order": 1
+          },
+          {
+            "id": "bond-c4-h-c4-1",
+            "a": "c4",
+            "b": "h-c4-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c4-h-c4-2",
+            "a": "c4",
+            "b": "h-c4-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c4-h-c4-3",
+            "a": "c4",
+            "b": "h-c4-3",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "carbon.isomers"
+    },
+    {
+      "id": "pentane",
+      "name": "pentan",
+      "aliases": [],
+      "formula": "C5H12",
+      "condensedFormula": "CH3–CH2–CH2–CH2–CH3",
+      "geometry": "structural-only",
+      "buildTarget": true,
+      "skillIds": [
+        "carbon.valence",
+        "carbon.families"
+      ],
+      "sourceRefs": [
+        "F5",
+        "O6"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 3
+          },
+          {
+            "id": "c2",
+            "element": "C",
+            "hydrogens": 2
+          },
+          {
+            "id": "c3",
+            "element": "C",
+            "hydrogens": 2
+          },
+          {
+            "id": "c4",
+            "element": "C",
+            "hydrogens": 2
+          },
+          {
+            "id": "c5",
+            "element": "C",
+            "hydrogens": 3
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "a": "c2",
+            "b": "c3",
+            "order": 1
+          },
+          {
+            "a": "c3",
+            "b": "c4",
+            "order": 1
+          },
+          {
+            "a": "c4",
+            "b": "c5",
+            "order": 1
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "c2",
+            "element": "C"
+          },
+          {
+            "id": "c3",
+            "element": "C"
+          },
+          {
+            "id": "c4",
+            "element": "C"
+          },
+          {
+            "id": "c5",
+            "element": "C"
+          },
+          {
+            "id": "h-c1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c1-3",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c2-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c3-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c4-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c4-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c5-1",
+            "element": "H"
+          },
+          {
+            "id": "h-c5-2",
+            "element": "H"
+          },
+          {
+            "id": "h-c5-3",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-c2",
+            "a": "c1",
+            "b": "c2",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-c3",
+            "a": "c2",
+            "b": "c3",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-c4",
+            "a": "c3",
+            "b": "c4",
+            "order": 1
+          },
+          {
+            "id": "bond-c4-c5",
+            "a": "c4",
+            "b": "c5",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-1",
+            "a": "c1",
+            "b": "h-c1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-2",
+            "a": "c1",
+            "b": "h-c1-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c1-h-c1-3",
+            "a": "c1",
+            "b": "h-c1-3",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-1",
+            "a": "c2",
+            "b": "h-c2-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c2-h-c2-2",
+            "a": "c2",
+            "b": "h-c2-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-1",
+            "a": "c3",
+            "b": "h-c3-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c3-h-c3-2",
+            "a": "c3",
+            "b": "h-c3-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c4-h-c4-1",
+            "a": "c4",
+            "b": "h-c4-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c4-h-c4-2",
+            "a": "c4",
+            "b": "h-c4-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c5-h-c5-1",
+            "a": "c5",
+            "b": "h-c5-1",
+            "order": 1
+          },
+          {
+            "id": "bond-c5-h-c5-2",
+            "a": "c5",
+            "b": "h-c5-2",
+            "order": 1
+          },
+          {
+            "id": "bond-c5-h-c5-3",
+            "a": "c5",
+            "b": "h-c5-3",
+            "order": 1
+          }
+        ]
+      },
+      "primarySkillId": "carbon.valence"
+    },
+    {
+      "id": "water",
+      "name": "vann",
+      "aliases": [],
+      "formula": "H2O",
+      "condensedFormula": "H–O–H",
+      "geometry": "bent",
+      "buildTarget": false,
+      "skillIds": [],
+      "sourceRefs": [
+        "F1",
+        "F2",
+        "N6",
+        "O5"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "o1",
+            "element": "O",
+            "hydrogens": 2
+          }
+        ],
+        "bonds": []
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "o1",
+            "element": "O"
+          },
+          {
+            "id": "h-o1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-o1-2",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-o1-h-o1-1",
+            "a": "o1",
+            "b": "h-o1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-o1-h-o1-2",
+            "a": "o1",
+            "b": "h-o1-2",
+            "order": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "carbon-dioxide",
+      "name": "karbondioksid",
+      "aliases": [],
+      "formula": "CO2",
+      "condensedFormula": "O=C=O",
+      "geometry": "linear",
+      "buildTarget": false,
+      "skillIds": [],
+      "sourceRefs": [
+        "O5"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C",
+            "hydrogens": 0
+          },
+          {
+            "id": "o1",
+            "element": "O",
+            "hydrogens": 0
+          },
+          {
+            "id": "o2",
+            "element": "O",
+            "hydrogens": 0
+          }
+        ],
+        "bonds": [
+          {
+            "a": "c1",
+            "b": "o1",
+            "order": 2
+          },
+          {
+            "a": "c1",
+            "b": "o2",
+            "order": 2
+          }
+        ]
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "c1",
+            "element": "C"
+          },
+          {
+            "id": "o1",
+            "element": "O"
+          },
+          {
+            "id": "o2",
+            "element": "O"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-c1-o1",
+            "a": "c1",
+            "b": "o1",
+            "order": 2
+          },
+          {
+            "id": "bond-c1-o2",
+            "a": "c1",
+            "b": "o2",
+            "order": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "ammonia",
+      "name": "ammoniakk",
+      "aliases": [],
+      "formula": "NH3",
+      "condensedFormula": "NH3",
+      "geometry": "trigonal-pyramidal",
+      "buildTarget": false,
+      "skillIds": [],
+      "sourceRefs": [
+        "F2",
+        "N6",
+        "O5"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "n1",
+            "element": "N",
+            "hydrogens": 3
+          }
+        ],
+        "bonds": []
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "n1",
+            "element": "N"
+          },
+          {
+            "id": "h-n1-1",
+            "element": "H"
+          },
+          {
+            "id": "h-n1-2",
+            "element": "H"
+          },
+          {
+            "id": "h-n1-3",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-n1-h-n1-1",
+            "a": "n1",
+            "b": "h-n1-1",
+            "order": 1
+          },
+          {
+            "id": "bond-n1-h-n1-2",
+            "a": "n1",
+            "b": "h-n1-2",
+            "order": 1
+          },
+          {
+            "id": "bond-n1-h-n1-3",
+            "a": "n1",
+            "b": "h-n1-3",
+            "order": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "hydrogen-chloride",
+      "name": "hydrogenklorid",
+      "aliases": [],
+      "formula": "HCl",
+      "condensedFormula": "H–Cl",
+      "geometry": "linear",
+      "buildTarget": false,
+      "skillIds": [],
+      "sourceRefs": [
+        "F2",
+        "N2"
+      ],
+      "heavyGraph": {
+        "atoms": [
+          {
+            "id": "cl1",
+            "element": "Cl",
+            "hydrogens": 1
+          }
+        ],
+        "bonds": []
+      },
+      "expandedGraph": {
+        "atoms": [
+          {
+            "id": "cl1",
+            "element": "Cl"
+          },
+          {
+            "id": "h-cl1-1",
+            "element": "H"
+          }
+        ],
+        "bonds": [
+          {
+            "id": "bond-cl1-h-cl1-1",
+            "a": "cl1",
+            "b": "h-cl1-1",
+            "order": 1
+          }
+        ]
+      }
+    }
+  ],
+  "worksheetNameMap": [
+    {
+      "name": "Metan",
+      "targetId": "methane"
+    },
+    {
+      "name": "Etan",
+      "targetId": "ethane"
+    },
+    {
+      "name": "Eten",
+      "targetId": "ethene"
+    },
+    {
+      "name": "Etyn",
+      "targetId": "ethyne"
+    },
+    {
+      "name": "Propan",
+      "targetId": "propane"
+    },
+    {
+      "name": "Etanol",
+      "targetId": "ethanol"
+    },
+    {
+      "name": "Propanol",
+      "targetId": "propan-1-ol"
+    },
+    {
+      "name": "Metansyre",
+      "targetId": "methanoic-acid"
+    },
+    {
+      "name": "Etansyre",
+      "targetId": "ethanoic-acid"
+    },
+    {
+      "name": "Butan",
+      "targetId": "butane"
+    },
+    {
+      "name": "Isobutan",
+      "targetId": "isobutane"
+    },
+    {
+      "name": "Pentan",
+      "targetId": "pentane"
+    },
+    {
+      "name": "2-metylpropan",
+      "targetId": "isobutane"
+    }
+  ]
+}

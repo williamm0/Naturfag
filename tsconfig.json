@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "none",
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "strict": true,
+    "outFile": "app.js",
+    "removeComments": false,
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "files": [
+    "src/types.ts",
+    "src/periodic-types.ts",
+    "src/content.ts",
+    "src/grading.ts",
+    "src/chemistry.ts",
+    "src/learning.ts",
+    "src/periodic-data.ts",
+    "src/periodic-engine.ts",
+    "src/storage.ts",
+    "src/dom.ts",
+    "src/diagrams.ts",
+    "src/practice.ts",
+    "src/labs.ts",
+    "src/pages.ts",
+    "src/periodic.ts",
+    "src/app.ts"
+  ]
+}
